@@ -4,13 +4,12 @@ Title: Eigenvectors and eigenvalues
 
 ---
 
+<h1>Eigenvectors and eigenvalues</h1>
+
 <ul class="dep">
 <li>Basics of linear algebra</li>
 <li>Matrix multiplication</li>
 </ul>
-
-# Eigenvectors and eigenvalues
-
 ## Summary 
 
 Let $\bc{\A}$ be a _square_ matrix. Multiplying a vector $\rc{\v}$ by $\bc{\A}$ results in another vector. If this vector points in the same direction as $\rc{\v}$, then we call $\rc{\v}$ an **eigenvector of $\bc{\A}$**.

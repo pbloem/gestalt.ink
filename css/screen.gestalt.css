@@ -55,6 +55,34 @@ article {
 	outline: 0;
 }
 
+.logo {
+
+	display: block;
+	width: 6em;
+	height: 6em;
+	
+	font-family: GillSansMTStd-Medium, "Gill Sans", sans-serif;
+		
+	position: absolute;
+	top: 1em;
+	left: 1em;
+}
+
+
+
+.logo svg {
+	margin: 0 auto;
+	width: 3em;
+	display: block;
+	
+}
+
+.logo .name { 
+	display: block;
+	text-align: center;
+	font-size: 0.8em;
+}
+
 @media (min-width: 550px)
 {
 	
@@ -67,35 +95,7 @@ article {
 		font-size: 3.5vw;
 		line-height: 5vw;
 	}
-	
-	#body nav {
-		flex: 0 0 2em;
-		margin: 3vw 0 0 0;
-		padding: 0;
-		
-		font-size: 1em;
-	}
-	
-	#body nav ul {
-		flex-direction: row;
-		height: 100%; 
-		margin: 0 auto;
-		padding: 0;
-	}
-	
-	#body nav li
-	{ 
-		list-style: none;
-		flex: 1 1 auto;
-		height: 100%;
-		margin: 0;
-	}
 
-	#body nav li a 
-	{ 
-		height: 100%;
-		line-height: 2em;
-	}
 }
 
 @media (min-width: 800px)
@@ -111,7 +111,7 @@ article {
 	}
 	
 	article {
-		margin: 0 auto;
+		margin: 0.5em auto;
 	 	padding: 0 0 6vw 0;	
 	 }
 	
@@ -125,7 +125,7 @@ article {
 	#body dl,
 	#body table,
 	#body figure, 
-	#body h2, #body h3, #body h4, #body h5,
+	#body h1, h2, #body h3, #body h4, #body h5,
 	#body blockquote,
 	#body div.sample,
 	#body .theorem,
@@ -152,20 +152,7 @@ article {
 		
 		height: 24px;
 	}
-	
-	#body ul.nav
-	{
-		margin: 0 0;
-		padding-top: 2em;
-		width: 100%;
-	}
-	
-	#body ul.nav li
-	{
-		margin: 0 auto;
-		width: 660px;
-		
-	}
+
 	
 	#body ul.publications li a
 	{
@@ -173,9 +160,6 @@ article {
 		padding: 0em 0 2em 0;
 	}
 	
-	#body nav.title a {
-		position: relative;
-	}
 }
 
 h1 {
@@ -186,7 +170,7 @@ h1 {
 	font-weight: normal;
 	 
 	text-transform: uppercase;
-	margin: 3vw auto 2vw auto;
+	margin: -0.1em auto 2vw auto;
 	
 }
 
@@ -224,11 +208,6 @@ body {
 	flex-direction: column;
 }
 
-
-.home nav {
-	flex: 0 0 30%;
-} 
-
 .home h1 {
 	font-size: 1.6rem;
 }
@@ -259,15 +238,6 @@ p.note {
 	margin: 0 0.5em 0 0.5em;
 }
 
-
-.contact {
-	width: 60%;
-	margin: 1em auto 2.5vh auto;
-	text-align: center;
-	font-size: 0.9em;
-	
-	flex: 1 1 auto;
-}
 
 @media (min-width: 550px) {
 	.subtitle {
@@ -346,202 +316,6 @@ a:hover {
 
 p {
 	
-}
-
-nav {
-	margin: 0vh 0 0 0;
-	padding: 5vh 0 0vh 0;
-	background-color: #677d00;
-	color: white;
-	width: 100%;
-	
-	font-size: 1.1em;
-	
-	flex: 0 0 auto;
-}
-
-nav a {
-	display: block;
-	text-transform: uppercase;
-	text-align: center;
-	padding: 0vh 0 0vh 0 ;
-	color: white;
-	font-family: GillSansMTStd-Medium, "Gill Sans", sans-serif;
-	
-	border: none;
-	background: none;
-}
-
-nav a:hover {
-	color: #acd373;
-}
-
-nav ul {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-
-nav ul, nav li {
-	list-style: none;	
-	padding: 0;
-	margin: 0;
-}
-
-nav li {
-	width: 100%;
-	flex: 0 0 auto;
-	margin-bottom: 2.5vh;
-}
-
-ul.nav, ul.nav  ul, .nav li {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-#body ul.authors {
-	display: inline;
-	list-style: none;
-	padding: 0;
-	margin: 0;
-}
-
-#body ul.authors li {
-	display: inline;
-	padding: 0;
-	margin: 0;
-}
-
-#body ul.authors li + li::before {
-	content: ', ';
-	margin-left: -0.2em;
-	color: black;
-}
-
-ul.nav li
-{
-	position: relative;
-}
-
-.teaching ul li
-{
-	text-align: center;
-}
-
-ul.nav li a
-{
-	display: block;
-	padding: 0.5em 0.5em 1.5em 0.5em;
-}
-
-.teaching ul.nav li a
-{
-	padding: 2em 0.5em 3em 0.5em;
-}
-
-
-
-ul.publications .year {
-	display: none;
-}
-	
-#body ul.nav li h2
-{
-	font-family: GillSansMTStd-Medium, "Gill Sans", sans-serif;
-	font-weight: normal;
-	text-transform: uppercase;
-	font-size: 1em;
-	margin: 0;
-	
-	color: #677d00;
-	text-align: left;
-}
-
-ul.nav li a:hover h2
-{
-}
-
-ul.publications .venue 
-{
-	display: block;
-}
-
-body.publications, 
-body.teaching,
-body.blog {
-	display: flex;	
-	flex-direction: column;
-}
-body.publications .content,
-body.teaching .content,
-body.blog .content
-{
-	overflow: auto;
-	flex: 1 1 auto;
-}
-
-#body nav.title {
-	flex: 0 0 2em;
-	
-	display: flex;
-	flex-orientation: row;
-	justify-content: center;
-	align-items: center;
-	
-	margin-top: auto;
-	position: relative;
-} 
-
-nav.title a {
-	text-indent: 200%;
-	white-space: nowrap;
-	overflow: hidden;
-	
-	display: block;
-	width: 2em;
-	height: 2em;
-		
-	margin-right: 0.8em;
-	
-	position: absolute;
-	bottom: 0;
-	left: 0;
-}
-
-nav.title a:before {
-	display: block;
-	position: absolute;
-	top: 0.6em;
-	left: 0.7em;
-	
-	content: '';
-	
-	width: 0;
-	height: 0;
-	
-	border-style: solid;
-	border-width: 0.4em 0.6em 0.4em 0;
-	border-color: transparent #ffffff transparent;
-}
-
-nav.title a:hover:before {
-	border-color: transparent #acd373 transparent;
-}
-
-nav.title h1 {
-	font-size: 1em;
-	line-height: 2em;
-	margin: 0;
-	max-width: 80%;
-	max-height: 2em;
-	
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	
-	color: #acd373;
 }
 
 ul.links {

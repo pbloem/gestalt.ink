@@ -162,12 +162,33 @@
   </head>
   <body id="body" class="body {% if page.front %}home{% endif %} ">
     
-	{% if page.article %}
-	   <article>
+    <div class="logo"><a href="/">
+    <svg viewBox="0 0 332 300" xmlns="http://www.w3.org/2000/svg">
+	 <g>
+	  <title>Layer 1</title>
+	  <g id="svg_9">
+	   <path transform="rotate(60, 300.176, 161.891)" id="svg_6" d="m259.23759,197.71263l40.93878,-71.6429l40.93878,71.6429l-81.87756,0z" stroke="#000" fill="#000000"/>
+	   <path transform="rotate(60, 258.176, 233.891)" id="svg_8" d="m217.23759,269.71263l40.93878,-71.6429l40.93878,71.6429l-81.87756,0z" stroke="#000" fill="#000000"/>
+	  </g>
+	  <g transform="rotate(-120, 176.941, 19.6184)" id="svg_12">
+	   <path transform="rotate(60, 208.176, -34.109)" id="svg_10" d="m167.23759,1.71263l40.93878,-71.6429l40.93878,71.6429l-81.87756,0z" stroke="#000" fill="#000000"/>
+	   <path transform="rotate(60, 166.176, 37.891)" id="svg_11" d="m125.23759,73.71263l40.93878,-71.6429l40.93878,71.6429l-81.87756,0z" stroke="#000" fill="#000000"/>
+	  </g>
+	  <g id="svg_15">
+	   <path transform="rotate(180, 83.853, 251.531)" id="svg_13" d="m42.91452,287.35229l40.93878,-71.6429l40.93878,71.6429l-81.87756,0z" stroke="#000" fill="#000000"/>
+	   <path transform="rotate(180, 42.4992, 179.158)" id="svg_14" d="m1.56075,214.97921l40.93878,-71.6429l40.93878,71.6429l-81.87756,0z" stroke="#000" fill="#000000"/>
+	  </g>
+	 </g>
+	</svg>
+    <span class="name">gestalt.ink</span>
+    </a></div>
+    
+	{% if page.front %}
 		 {{ content }}
-	   </article>
 	{% else %}
+	   <article>
 		{{ content }}
+	   </article>
 	{% endif %}
 
 	</body>
