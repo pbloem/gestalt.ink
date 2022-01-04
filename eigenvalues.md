@@ -23,7 +23,7 @@ We require that $\rc{\v}$ be a nonzero vector. For $\rc{\v}$ to be an eigenvecto
 $$\bc{\A}\rc{\v} = \bc{\lambda}\rc{\v}
 $$
 
-where $\bc{\lambda}$ is some scalar. If $\rc{\v}$ is an eigenvector, then the corresponding scalar $\bc{\lambda}$ is its eigenvalue.
+where $\bc{\lambda}$ is some scalar. If $\rc{\v}$ is an eigenvector, then the corresponding scalar $\bc{\lambda}$ is called its **eigenvalue**. We can also say that $\bc{\lamda}$ is an eigenvalue of $\bc{\A}$. 
 
 <aside>To multiply a scalar by a vector, we just multiply the scalar by each element of the vector. The effect is that the vector stretches or shrinks, but keeps pointing in the same direction.
 </aside>
@@ -40,3 +40,25 @@ Note the following details about this definition:
 ## Geometric intuition
 
 From the definition, it's not easy to see why eigenvectors and eigenvalues are such an important concept. To understand that properly, we'll need to explore some places where the concept pops up.
+
+...
+
+## Maximizing the quadratic
+
+<ul class="dep">
+<li><a href="quadratic"></a></li>
+</ul>
+
+## Eigenvalues of the covariance
+
+
+
+## Moving quantities around
+
+...
+
+
+## In abstract linear algebra
+
+<ul class="prelim">
+<\ul>

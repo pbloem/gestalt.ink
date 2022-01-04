@@ -1,10 +1,20 @@
 # About
 
-Gestalt.ink is intended as a repositroy of general knowledge about topics in mathematics machine learning and physics. Its primary aim is to provide an encyclopedic overview that allows to to jump in at random points. Each topic is discussed using a minimum of preliminaries, with those preliminaries that were unavoidable spelled out explicitly. 
+<blockquote>
+No matter what I study, I can see patterns. I see the gestalt, the melody within the notes, in everything: mathematics and science, art and music, psychology and sociology. <br/>
+&mdash;Ted Chiang, Understand
+</blockquote>
 
-The secondary aim, and this is where the name comes from is to provide understanding through different perspectives. Often, a subject like eigenvectors is explained using one derivation only. For instance, an eigenvector is a vector whose direction doesn't change. While this is true, there are many different ways to arrive at the same idea, and many different contexts in which they can be used. A true understanding of what eigenvectors are comes after you've followed a few of these derivations.
+Gestalt.ink is intended as a repository of general knowledge about, focusing on mathematics, machine learning and physics. Its primary aim is to provide an encyclopedic overview that allows to to jump in at random points. Each topic is discussed using a minimum of preliminaries, with those preliminaries that were unavoidable spelled out explicitly. 
 
-This is what we'll call a _gestalt understanding_. A complete article will (hopefully) allow you to achieve such an understanding in a self-contained way. We'll always start with an executive summary, so if all you need is the basics, you can get them quickly. But, ideally, the longer you keep reading, the more insight you get.
+<aside>The phrase <em>encyclopedic</em> refers to the intended tone and use. No promises about how complete the coverage will be.
+</aside>
+
+The secondary aim, and this is where the name comes from, is to provide understanding through different perspectives. Often, a subject like eigenvectors is explained using one derivation only. For instance, an eigenvector is a vector whose direction doesn't change. While this is accurate and useful, there are many different ways to arrive at the same idea, and many different contexts in which they can be used. A true understanding of what eigenvectors are, comes only after you've followed a few of these derivations.
+
+This is what we'll call a _gestalt understanding_: the understanding you get only from having seen different perspectives on the same thing.
+
+A complete article will aim to provide such an understanding in a self-contained way. We'll always start with an executive summary, so if all you need is the basics, you can get them quickly. But, ideally, the longer you keep reading, the more insight you get.
 
 ## Guiding principles
 

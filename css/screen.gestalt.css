@@ -81,6 +81,7 @@ article {
 	display: block;
 	text-align: center;
 	font-size: 0.8em;
+	color: black;
 }
 
 @media (min-width: 550px)
@@ -250,15 +251,14 @@ p.note {
 }
 
 a {
-	color: black;
+	color: #677d00;
 	text-decoration: none;
 
-	padding-bottom: 0.4em;
-	
-	background: url('../images/sketchy.png') repeat-x;
-	background-position: bottom left;
-	
-	background-size: 200px 10px;
+	padding-bottom: 0.1em;
+}
+
+a:hover {
+	text-shadow: 1px 1px #ddd;
 }
 
 #body .MathJax a {
@@ -310,9 +310,6 @@ abbr {
 	background-position: -100px bottom;
 }
 
-a:hover {
-	color: #677d00;
-}
 
 p {
 	
@@ -560,7 +557,8 @@ th {
 
 blockquote {
 	padding: 0 0 0 4em;
-	font-family: GillSansMTStd-Medium, Helvetica, sans-serif;	font-family: GillSansMTStd-Medium, Helvetica, sans-serif;
+	font-family: GillSansMTStd-Medium, "Gill Sans", sans-serif;
+	font-size: 0.8em;
 
 }
 
