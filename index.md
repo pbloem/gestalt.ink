@@ -1,6 +1,6 @@
 # gestalt.ink
 
-math | machine learning | physics
+math | machine learning | physics | [about](about)
 
 ## Level 0
 
