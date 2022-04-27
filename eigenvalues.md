@@ -10,7 +10,7 @@ Title: Eigenvectors and eigenvalues
 <li>Basics of linear algebra</li>
 <li>Matrix multiplication</li>
 </ul>
-## Summary 
+## Summary
 
 Let $\bc{\A}$ be a _square_ matrix. Multiplying a vector $\rc{\v}$ by $\bc{\A}$ results in another vector. If this vector points in the same direction as $\rc{\v}$, then we call $\rc{\v}$ an **eigenvector of $\bc{\A}$**.
 
@@ -23,7 +23,7 @@ We require that $\rc{\v}$ be a nonzero vector. For $\rc{\v}$ to be an eigenvecto
 $$\bc{\A}\rc{\v} = \bc{\lambda}\rc{\v}
 $$
 
-where $\bc{\lambda}$ is some scalar. If $\rc{\v}$ is an eigenvector, then the corresponding scalar $\bc{\lambda}$ is called its **eigenvalue**. We can also say that $\bc{\lamda}$ is an eigenvalue of $\bc{\A}$. 
+where $\bc{\lambda}$ is some scalar. If $\rc{\v}$ is an eigenvector, then the corresponding scalar $\bc{\lambda}$ is called its **eigenvalue**. We can also say that $\bc{\lamda}$ is an eigenvalue of $\bc{\A}$.
 
 <aside>To multiply a scalar by a vector, we just multiply the scalar by each element of the vector. The effect is that the vector stretches or shrinks, but keeps pointing in the same direction.
 </aside>

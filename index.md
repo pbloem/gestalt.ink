@@ -1,41 +1,44 @@
 # gestalt.ink
 
 <ul class="links">
-<li><a href="about">about</a></li>
+<li><a href="about">About</a></li>
 </ul>
 
-Topics are arranged by level. Subjects in a lower level (including those not mentioned explicitly) are assumed to be mostly understood, and dependencies are not made explicit. In general, if you've finished high-school, you should be able to read Level 1, if you've finished the first first years of a BSc you should be able to read level 2, and so on.
+Topics are arranged by level. For a subject in level 1, we will assume the subjects in level 0 as preliminaries without making them explicit. In general, if you've finished high-school, you should be able to read Level 1, if you've finished the first first years of a BSc you should be able to read level 2, and so on.
 
 ## Level 0
 
-The topics at this level are mostly taught in high school, or equivalent.  
+The topics at this level are usually taught somewhere before university.  
 
-## General
+### General
 
 * Numbers
 
-## Calculus
+### Calculus
 
 * Limits
 * Derivatives
+* Integration
 * Partial derivatives
 
-## Linear algebra
+### Linear algebra
 
 * Basic linear algebra
+* Dot products
 * Matrix multiplication
 
 ## Level 1
 
 These are the topics covered in the early years of most BSc programs.
 
-## General
+### General
+
 * Complex numbers
 
-## Linear algebra
+### Linear algebra
 
 * [Matrix rank](rank)
-* Determinant
+* The determinant
 * Matrix inverse
 * [Eigenvalues and -vectors](eigenvalues)
 * Singular value decomposition
@@ -43,30 +46,27 @@ These are the topics covered in the early years of most BSc programs.
 * [Quadratics](quadratics)
 * Abstract linear algebra
 
-
-## Calculus
+### Calculus
 
 * Taylor series
-*
 
 ## Level 2
 
 Topics generally covered in the later parts of BSc programs.
 
-## General
+### General
 
 * Numbers revisited
 
-## Linear algebra
+### Linear algebra
 
 * The spectral theorem
 * The fundamental theorem of algebra
 
-## Level 3
+### Level 3
 
 Topics generally covered in MSc programs.
 
-## Level 4
+### Level 4
 
 Topics that are usually no longer covered in organized educational formats, but rather in research articles or materials aimed at working scientists.
-
