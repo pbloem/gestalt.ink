@@ -22,7 +22,7 @@ We can derive this rule simply from the _distributive_ property of multiplicatio
 
 Imagine that you want to buy apples for a children's birthday party of 4 boys and 5 girls. Each child should get <span class="gc">two apples</span>. How many apples should you buy? 
 
-Do you add up the boys and girls first and then multiply by <span class="gc">two</span, or do you multiply the number of girls by <span class="gc">two</span>, the number of boys by <span class="gc">two</span> and then add these together? 
+Do you add up the boys and girls first and then multiply by <span class="gc">two</span>, or do you multiply the number of girls by <span class="gc">two</span>, the number of boys by <span class="gc">two</span> and then add these together? 
 
 The answer is that it doesn't matter, of course, because
 
