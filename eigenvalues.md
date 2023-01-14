@@ -23,14 +23,14 @@ We require that $\rc{\v}$ be a nonzero vector. For $\rc{\v}$ to be an eigenvecto
 $$\bc{\A}\rc{\v} = \bc{\lambda}\rc{\v}
 $$
 
-where $\bc{\lambda}$ is some scalar. If $\rc{\v}$ is an eigenvector, then the corresponding scalar $\bc{\lambda}$ is called its **eigenvalue**. We can also say that $\bc{\lamda}$ is an eigenvalue of $\bc{\A}$.
+where $\bc{\lambda}$ is some scalar. If $\rc{\v}$ is an eigenvector, then the corresponding scalar $\bc{\lambda}$ is called its **eigenvalue**. We can also say that $\bc{\lambda}$ is an eigenvalue of $\bc{\A}$.
 
 <aside>To multiply a scalar by a vector, we just multiply the scalar by each element of the vector. The effect is that the vector stretches or shrinks, but keeps pointing in the same direction.
 </aside>
 
 Note the following details about this definition:
 
-* The vector containing all zeros always satifies the definition, but is never considered an eigenvector. The scalar $0$ can be an eigen_value_. Consider, for instance, an identity  matrix with a zeroed-out column.
+* The vector containing all zeros always satisfies the definition, but is not considered an eigenvector. However, the scalar $0$ can be an eigen_value_. Consider, for instance, an identity  matrix with a zeroed-out column.
 * The eigenvalue can be negative.
 * Not all matrices have eigenvectors. Consider for instance, a rotation matrix.
 * If $\rc{\v}$ is an eigenvector, then $\rc{\v}$ multiplied by any number except 0 is also an eigenvector.

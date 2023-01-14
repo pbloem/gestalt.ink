@@ -8,11 +8,14 @@ Topics are arranged by level. For a subject in level 1, we will assume the subje
 
 ## Level 0
 
-The topics at this level are usually taught somewhere before university.  
+The topics at this level are usually taught somewhere before university.
 
 ### General
 
 * Numbers
+* [Proofs](proofs)
+* [Square of a sum](square-sum)
+* [Binomial theorem](binomial-theorem)
 
 ### Calculus
 

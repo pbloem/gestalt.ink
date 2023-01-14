@@ -16,7 +16,7 @@ $f(x, y) =\kc{2}xy + \kc{3}x^2 - \kc{4}y^2 + \kc{3}x + \kc{8}$
 
 the first term contains the product of both inputs, and the second and third term contain one of the inputs twice. 
 
-Quadratics are oif particular interest in linear algebra, because they can be modeled by a matrix. We already know how a linear function of multiple variables can be modeled by a matrix $\bc{\A}$. We combine the inputs into a vector $\x$ and compute $\bc{\A}\x$ giving us a vector of all the output variables.
+Quadratics are of particular interest in linear algebra, because they can be modeled by a matrix. We already know how a linear function of multiple variables can be modeled by a matrix $\bc{\A}$. We combine the inputs into a vector $\x$ and compute $\bc{\A}\x$ giving us a vector of all the output variables.
 
 In the case of a quadratic function, we create $\x$ in the same way, and we require $\bc{\A}$ to be a square matrix. We then compute the value
 
