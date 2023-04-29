@@ -5,7 +5,7 @@ No matter what I study, I can see patterns. I see the gestalt, the melody within
 &mdash;Ted Chiang, Understand
 </blockquote>
 
-Gestalt.ink is intended as a repository of general knowledge, focusing on mathematics, machine learning and physics. Its first aim is to provide an overview which encyclopedic in style and which allows the reader to jump in at arbitrary points. Each topic is discussed using minimal preliminaries, and with the required preliminaries spelled out explicitly.
+Gestalt.ink is intended as a repository of general knowledge, focusing on mathematics, machine learning and physics. Its first aim is to provide an overview which is encyclopedic in style and which allows the reader to jump in at arbitrary points. Each topic is discussed using minimal preliminaries, and with the required preliminaries spelled out explicitly.
 
 <aside>The phrase <em>encyclopedic</em> refers to the intended tone and use. No promises about how complete the coverage will be.
 </aside>

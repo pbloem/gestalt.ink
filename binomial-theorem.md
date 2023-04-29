@@ -149,7 +149,7 @@ And there we have it, the Binomial theorem.
 
 ## Applications 
 
-So, we've shown that we can take any sum of the form $(\rc{a} + \bc{b})^n$ and rewrite it as $\sum_{k = 0}^n {n \choose k} \rc{a}^k\bc{b}^{n-k}$. What does this buy us In what situations are we likely to encounter such sums and why would we prefer the second formulation?
+So, we've shown that we can take any sum of the form $(\rc{a} + \bc{b})^n$ and rewrite it as $\sum_{k = 0}^n {n \choose k} \rc{a}^k\bc{b}^{n-k}$. What does this buy us? In what situations are we likely to encounter such sums and why would we prefer the second formulation?
 
 ### Derivatives
 

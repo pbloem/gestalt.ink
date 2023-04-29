@@ -53,6 +53,12 @@ front: true
 </div>
 
 <div markdown="1">
+### Calculus
+
+* Taylor series
+</div>
+
+<div markdown="1">
 ### Linear algebra
 
 * [Matrix rank](rank)
@@ -65,11 +71,6 @@ front: true
 * Abstract linear algebra
 </div>
 
-<div markdown="1">
-### Calculus
-
-* Taylor series
-</div>
 
 </section>
 
