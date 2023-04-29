@@ -58,14 +58,18 @@ article {
 .logo {
 
 	display: block;
-	width: 6em;
-	height: 6em;
+	width: 4em;
+	height: 4em;
+	
+	margin: 1em auto 0em auto;
 	
 	font-family: GillSansMTStd-Medium, "Gill Sans", sans-serif;
 		
+/* 
 	position: absolute;
 	top: 1em;
 	left: 1em;
+ */
 }
 
 
@@ -78,10 +82,13 @@ article {
 }
 
 .logo .name { 
+	display: none;
+/* 
 	display: block;
 	text-align: center;
 	font-size: 0.8em;
 	color: black;
+ */
 }
 
 @media (min-width: 550px)
@@ -173,6 +180,7 @@ h1 {
 	text-transform: uppercase;
 	margin: -0.1em auto 2vw auto;
 	
+	text-align: center;
 }
 
 
@@ -192,11 +200,11 @@ h1 {
 #body h2 {
 	font-family: GillSansMTStd-Medium, "Gill Sans", sans-serif;
 	
-	font-size: 1.4rem;
+	font-size: 1.4em;
 	
-	font-weight: normal;
+	font-weight: 500;	
 	 
-	margin: 1vw auto 1vw auto;
+	margin: 1em auto 1em auto;
 	
 }
 
@@ -347,8 +355,8 @@ ul.links {
 	color: #677d00;
 }
 
-aside {
-	padding-left: 4em;
+#body aside {
+	padding-left: 2em;
 	font-style: italic;
 	line-height: inherit;
 	
@@ -356,6 +364,8 @@ aside {
 	line-height: 1.875em;
 	
 	margin-bottom: 1em;
+	
+	width: calc(660px - 2em);
 }
 
 aside em {
@@ -749,3 +759,48 @@ div.sample
 	text-transform: uppercase;
 	font-size: 0.65em;
 }
+
+.prel {
+	font-family: GillSansMTStd-Medium, "Gill Sans", sans-serif;
+
+
+	display: inline-block;
+	margin-bottom: 0;
+	font-weight: 400;
+	
+	position: relative;
+	top: -1em;
+}
+
+.prel:before{
+	content: '—';
+}
+
+.prel + ul {
+	display: inline;
+	list-style: none;
+	
+	position: relative;
+	top: -1em;
+}
+
+.prel + ul li {
+	display: inline;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.prel + ul li:before {
+	content: none;
+}
+
+.prel + ul li + li:before {
+	content: ', ';
+	position: static;
+	width: auto;
+	display: inline;
+	margin-left: -0.25em;
+	color: black;
+}
+
