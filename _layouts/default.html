@@ -161,6 +161,20 @@
     <script src="/scripts/scripts.js"></script>
     
     <link rel="icon" type="image/png" href="/images/logo.svg" sizes="128,64,32" />
+
+	<!-- Twitter cards -->
+	<meta name="twitter:site"    content="@pbloemesquire">
+	<meta name="twitter:title"   content="{{page.title}}">
+
+	
+	<meta name="twitter:description" content="Bottom-up explanations.">
+	
+
+	
+	<meta name="twitter:card"  content="summary">
+	<meta name="twitter:image" content="http://gestalt.ink/images/logo.svg">
+	
+	<!-- end of Twitter cards -->
     		
   </head>
   <body id="body" class="body {% if page.front %}home{% endif %} ">
@@ -186,13 +200,9 @@
     <span class="name">gestalt.ink</span>
     </a></div>
     
-	{% if page.front %}
-		 {{ content }}
-	{% else %}
 	   <article>
 		{{ content }}
 	   </article>
-	{% endif %}
 
 	</body>
 </html>
