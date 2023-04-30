@@ -856,7 +856,7 @@ div.sample
 	font-weight: 400;
 }
 
-.home h1, .home h2, .home h3 {
+#body.home h1, #body.home h2, #body.home h3 {
 	width: 100%;
 	
 }
