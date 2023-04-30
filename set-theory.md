@@ -1,5 +1,6 @@
 ---
-title: Set theory 
+title: Set theory
+summary: "Set theory is a mathematical language used to define collections of things. It plays a central role in mathematics because it is often used as a language in which to define other mathematical concepts."
 ---
 
 # Set theory

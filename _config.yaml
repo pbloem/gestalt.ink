@@ -1,0 +1,11 @@
+title:            gestalt.ink
+description:      Bottom-up explanations
+
+defaults:
+  -
+    scope:
+        path: ""
+    values:
+        home: false     # whether we're on the home page
+        class: ''       # Will be added to the class attributed of the body tag for styling
+        summary: ''
