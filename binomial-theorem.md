@@ -1,13 +1,13 @@
 ---
 title: the binomial theorem
-
+summary: "The binomial theorem is a generalization of [the rule](square-sum) that says that (a + b)^2 = a^2 + 2ab + b^2."
 ---
 
 # The binomial theorem
 
 ## Summary
 
-The **Binomial theorem** is a generalization of [the rule](square-sum) that says that
+The **binomial theorem** is a generalization of [the rule](square-sum) that says that
 
 $$(\rc{a} + \bc{b})^2 = \rc{a}^2 + 2\rc{a}\bc{b} + \bc{b}^2 \p$$
 
