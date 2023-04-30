@@ -16,6 +16,7 @@ front: true
 <div markdown="1">
 ### General
 
+* [Set theory](set-theory)
 * Numbers
 * [Proofs](proofs)
 * [Square of a sum](square-sum)
@@ -83,6 +84,7 @@ front: true
 <div markdown="1">
 ### General
 
+* Axiomatic set theory
 * Numbers revisited
 </div>
 
