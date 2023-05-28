@@ -17,7 +17,7 @@ front: true
 ### General
 
 * [Set theory](set-theory)
-* Numbers
+* [Numbers](numbers)
 * [Proofs](proofs)
 * [Square of a sum](square-sum)
 * [Binomial theorem](binomial-theorem)
@@ -50,7 +50,7 @@ front: true
 <div markdown="1">
 ### General
 
-* Complex numbers
+* [Complex numbers](/complex-numbers)
 </div>
 
 <div markdown="1">
