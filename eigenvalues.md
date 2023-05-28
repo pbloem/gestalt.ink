@@ -6,10 +6,10 @@ Title: Eigenvectors and eigenvalues
 
 <h1>Eigenvectors and eigenvalues</h1>
 
-<ul class="dep">
-<li>Basics of linear algebra</li>
-<li>Matrix multiplication</li>
-</ul>
+<div class="prel">preliminaries:</div>
+* Matrix multiplication
+
+
 ## Summary
 
 Let $\bc{\A}$ be a _square_ matrix. Multiplying a vector $\rc{\v}$ by $\bc{\A}$ results in another vector. If this vector points in the same direction as $\rc{\v}$, then we call $\rc{\v}$ an **eigenvector of $\bc{\A}$**.
@@ -30,7 +30,7 @@ where $\bc{\lambda}$ is some scalar. If $\rc{\v}$ is an eigenvector, then the co
 
 Note the following details about this definition:
 
-* The vector containing all zeros always satisfies the definition, but is not considered an eigenvector. However, the scalar $0$ can be an eigen_value_. Consider, for instance, an identity  matrix with a zeroed-out column.
+* The vector containing all zeros always satisfies the definition, but is not considered an eigenvector. However, the scalar $0$ can be an eigen<em>value</em>. Consider, for instance, an identity  matrix with a zeroed-out column.
 * The eigenvalue can be negative.
 * Not all matrices have eigenvectors. Consider for instance, a rotation matrix.
 * If $\rc{\v}$ is an eigenvector, then $\rc{\v}$ multiplied by any number except 0 is also an eigenvector.

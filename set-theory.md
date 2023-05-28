@@ -117,14 +117,16 @@ $$
 \oc{0} = \oc{\{\}} \p
 $$
 
-You can think of this simply as using the symbol $\oc{0}$ as a name for the empty set (like we did with the symbol $\oc{a}$ before). This gives us one number. Next, we define the _successor_ of a number. If $n$ represents a number, then its successor is the set that contains $\{n\}$ and all elements in $n$. 
+You can think of this simply as using the symbol $\oc{0}$ as a name for the empty set (like we did with the symbol $\oc{a}$ before). This gives us one number. Next, we define the _successor_ of a number. If we define this correctly, the successor will simply be the next number along: the successor of $0$ is $1$, the successor of $1$ is $2$ and so on. 
 
-<p>This means that the successor of $0$ is the set containing $0 = \oc{\{\}}$. We can give this successor the name $\gc{1}$. The successor of $\gc{1}$ is the set containing $\gc{1}$ and all elements in $\gc{1} = \gc{\{\oc{0}\}}$. Naming this successor $\bc{2}$, we get $\bc{2} = \bc{\{\gc{1}, \oc{0}\}} = \bc{\{\gc{\{\oc{\{\}}\}}, \oc{\{\}}\}}$.
+We define this as follows: if the set $n$ represents a number, then its successor is the set that contains $\{n\}$ and all elements in $n$. 
+
+<p>To start with, the only number we know about is $0 = \oc{\{\}}$. Its successor is the set <em>containing</em> $\oc{\{\}}$. We can give this successor the name $\gc{1}  = \gc{\{\oc{0}\}}$. The successor of $\gc{1}$ is the set containing $\gc{1}$ and all elements in $\gc{1}$. Naming this successor $\bc{2}$, we get $\bc{2} = \bc{\{\gc{1}, \oc{0}\}} = \bc{\{\gc{\{\oc{\{\}}\}}, \oc{\{\}}\}}$.
 </p> 
 
 Try to complete the process for a few more numbers. You'll see that each number is defined as the set of all natural numbers that proceed it. 
 
-This solves a particular problem with defining set theory before numbers: defining cardinality. Above, we defined cardinality as the amount of things in the set. We can't do that if numbers haven't been defined yet. Instead we can use the idea of a **one-to-one correspondence**. 
+This solves a particular problem with defining set theory before numbers: defining cardinality. Above, we defined cardinality informally as the _number_ of things in the set. We can't do that if numbers haven't been defined yet. Instead we can use the idea of a **one-to-one correspondence**. 
 
 <p>For instance, assume that all natural numbers up to 9 have been defined. We can then say that the set $\{5, 7, 9 \}$ has the same cardinality as the set $3 = \{\oc{0}, \gc{1}, \bc{2}\}$ because we can match up each of their elements and have none left over. For instance:</p>
 
@@ -145,7 +147,7 @@ $$
 
 ### Equality
 
-Perhaps the most fundamental operation in set theory is that of **equality**. Let's start with the objects in our universe (if we have any). In set theory, we don't care what they are. We used female oscar winners above, but from the perspective of set theory, we don't care who or what they are: when and where they were born, what films they made, none of it matters. The only thing we care about is identity. Each object in our universe is equal only to itself, and not equal to any other object. 
+Perhaps the most fundamental operation in set theory is that of **equality**. Let's start with the objects in our universe (if we have any). In set theory, we don't care what they are. We used female oscar winners above, but from the perspective of set theory, we don't care who or what they are: when and where they were born, what films they made, none of it matters. The only thing we care about is _identity_. Each object in our universe is equal only to itself, and not equal to any other object. 
 
 $$
 \text{MichelleYeoh} = \text{MichelleYeoh} \;\;\;\;\; \text{MichelleYeoh} \neq \text{ChloeZhao}
@@ -153,11 +155,11 @@ $$
 
 With this notion of equality in hand, we can define when two sets are equal. Informally, two sets are equal if they contain the same elements. More formally, we can say that two sets are equal if their elements can be put into one-to-one correspondence, in such a way that the matched elements are equal. 
 
-<p>For instance, the sets $\left\{\{\{\}\}, \{\}\right\}$ and $\bc{2} = \{\oc{0}, \gc{1}\}$ are equal, because their members can be put in the following correspondence:
+<p>For instance, the sets $\bc{ \left\{ \gc{ \{\oc{\{\}} \} }, \oc{\{\}} \right\} }$ and $\bc{2} = \bc{\{\oc{0}, \gc{1}\} }$ are equal, because their members can be put in the following correspondence:
 </p>
 
 $$
-\oc{0} = \{\} \;\;\;\; \gc{1} = \{\{\}\} \p
+\oc{0} = \oc{\{\}} \;\;\;\; \gc{1} = \gc{\{\oc{\{\}}\}} \p
 $$
 
 If no such correspondence exists, two sets are not equal.
@@ -278,7 +280,7 @@ $$
 
 where ${\mathbb N}$ represents the set of all natural numbers ($0, 1 ,2, 3,\ldots$).
 
-<aside> Set builder notation can be hard to use formally, especially if we're using set theory to define other areas of mathematics. It's important to realize that that kind of rigor is not usually necessary. In less formal settings, we can just use whatever language we like to the right of the bar, even natural language.
+<aside>Set builder notation can be hard to use formally, especially if we're using set theory to define other areas of mathematics. It's important to realize that that kind of rigor is not usually necessary. In less formal settings, we can just use whatever language we like to the right of the bar, even natural language.
 </aside>
 
 ## Relations and functions
@@ -373,7 +375,7 @@ Ok, fine. So maybe $R$ doesn't contain all sets. Maybe there are some sets outsi
 
 It turns out it doesn't. However we define our sets, if we can ask the question of whether a sets contains itself, we can build $R$, and _we can then ask whether $R$ contains itself_. This is the heart of the paradox. If $R$ is in $R$, it contains itself, but we defined $R$ as the set of sets that _don't_ contain themselves. If $R$ is not in $R$, it doesn't contain itself, but then should be in $R$ since we defined it as the sets that don't contain themselves.
 
-This is known as **Russell's paradox**. It's a classic kind of self-referential paradox sometimes called an _antinomy_. It's a subtle pattern that is worth recognizing, so we'll allow ourselves to get a little side-tracked and loook at some examples outside set theory.
+This is known as **Russell's paradox**. It's a classic kind of self-referential paradox sometimes called an _antinomy_. It's a subtle pattern that is worth recognizing, so we'll allow ourselves to get a little side-tracked and look at some examples outside set theory.
 
 First, here are some examples of things that _don't_ immediately cause paradoxes. Take some time to study them first.
 
@@ -383,7 +385,7 @@ First, here are some examples of things that _don't_ immediately cause paradoxes
 
 Hopefully the pattern is becoming clear: The grocer either buys his own aftershave (in which case he shaves himself) or he doesn't (in which case the barber must shave him).The word autological is itself autological, or it isn't. Both could be the case. _Give me a self-answering puzzle_ could be a self answering puzzle or not. If we define it to be one, then it is, and if we define it not to be one, then it isn't. 
 
-Strictly speaking, these examples don't cause problems, but they should _feel_ uneasy. How can a concept with a well-defined meaning refer to itself and not to itself?
+Strictly speaking, these examples don't cause problems, but they should _feel_ uneasy. If a concept is well-defined, why should we be free to decide one of its fundamental consequences?
 
 We can create the same kind of example in (naive) set theory. The set of all sets that are members of themselves:
 

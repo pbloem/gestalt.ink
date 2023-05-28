@@ -45,7 +45,7 @@ front: true
 <section markdown="1">
 ## Level 1
 
-<span>These are the topics covered in the early years of most BSc programs.</span>
+<span>These are topics covered in the early years of most BSc programs.</span>
 
 <div markdown="1">
 ### General
