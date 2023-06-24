@@ -72,11 +72,19 @@ We can treat $\z_s$ as a a _direction_ in latent space. If we take any picture o
 
 -- image algorithm
 
+The more of the smile vector we add, the more we manipulate the data.
+
+The key here is not so much specific example, but how we managed to combine usnsupervised learning on a lot of unlabeled data with a small amount of supervision based on a handful of labeled examples. This is a key insight: **with enough unlabeled data, the right kind of unsupervised learning algorithm and a little clever application of the small amount of labeled data that you do have, you canget very far in machine learning.** 
+
+The key insight is that the unsupervised learning already learns all the stuff you're interested in (if it helps to solve the unsupervised objective). The only thing you need from the supervised labels is to help you identify which aspects of the latent representation correspond to the high-level features you're interested in.
+
 ### Interpolation
 
-What the smile vector example shows us, is that the the latent representations of the data aren't the only points in the latent space that decode to realistic looking faces. The points in between also show us quite realistic images of people. So far, variations of the people in our data, but we can push this a little farther by using _interpolation_. We simply pick two random people in the data and draw a line between them _in the latent space_. If we then pick a series 
+What the smile vector example shows us, is that the the latent representations of the data aren't the only points in the latent space that decode to realistic looking faces. The points in between also show us quite realistic images of people. So far, variations of the people in our data, but we can push this a little farther by using _interpolation_. We simply pick two random people, persons A and B, in the data and draw a line between them _in the latent space_. If we then pick some point on this line, and decode them, we will see a human face that transforms smoothly from that of person A to that of person B. The transformation looks magical, because every point in between is also a realistic looking face.
 
+-- image
 
+By comparison, if we do the same thing in the original $\R^{64 \times 64 \times 3}$ space of the images (flattening each into a vector), we see that we also get a smooth transition, but the intermediate values look more like a cross-fade. They show a mixture of two faces rather than one single one with aspects of both.
 
 == Autoencoders for generative modelling ==
 
