@@ -28,9 +28,9 @@ As a consequence, an autoencoder that is somewhat succesful has learned to map t
 
 We call $\z$ the _latent representation_ of $\x$. That is, the encoder computes a function $\x \to z$ and the decoder computes (approximately) $\x \to \z$.
 
-<div clas="aside" markdown="1">
+<aside markdown="1">
   If you know about [PCA](pca), you may have noted that autoencoders and PCA behave quite similarly. In fact, if we use only a singlew linear layer in the encoder and decoder and no activations, and train the autoencoder with least squares loss, the result is almost, but not quite the same as PCA. We'll spell out the difference below.
-</div>
+</aside>
 
 == Autoencoders for dimensionality reduction ==
 
