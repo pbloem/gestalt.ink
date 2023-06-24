@@ -66,6 +66,13 @@ The key idea of the "smile vector" is that if we take a picture of a frowning pe
 
 All we need to achieve this, is to find the broad regions in latent space where the model puts smiling people and where it puts frowning people. We need a little bit of annotated data here, but not much: about twenty examples of smiling people and twenty examples of frowning people.
 
+We map each subset to their latent representations and compute the averages: $\z_\text{smiles}$ is the average of the latent representations of the smiling people and $\z_\text{frowns}$ is the average for the frowning people. The _smile vector_ $\z_s$ is the arrow from the frowning to the smiling group. That is, $\z_s = \z_\text{frowns} - \z_\text{smiles}$. 
+
+We can treat $\z_s$ as a a _direction_ in latent space. If we take any picture of a frowning person $\x$, map it to its latent representation $\z$ and add a little bit of the smile vector to it, we should a latent representation of the same person, but smiling a bit more
+
+\[
+\]
+
 
 
 
