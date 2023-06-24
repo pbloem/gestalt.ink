@@ -47,10 +47,14 @@ The higher this value is for the true target value $\t$ the better the network d
 \argmin_\theta \prod_{\x, \t \in \text{Data}} p_\theta(\t \mid \x) \p
 \]
 
-Here, $p_\theta$ encapsulates both our choice of network architecture and the probability function it parametrizes.
+Here, $p_\theta$ encapsulates both our choice of network architecture and the probability function it parametrizes. This is always the aim of supervised learning. 
 
 ### Adding randomness at the input
 
+We have two problems with the random neural networks we have defined so far:
+
+1. They are only well defined for problems with example input/output pairs (like a classification task). With the type of problem we have here, we only have examples of the sort of thing we want the network to output. There are no corresponding inputs.
+2. The output distributions we have so far are too simple. 
 
 
 
