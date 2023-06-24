@@ -86,11 +86,26 @@ What the smile vector example shows us, is that the the latent representations o
 
 By comparison, if we do the same thing in the original $\R^{64 \times 64 \times 3}$ space of the images (flattening each into a vector), we see that we also get a smooth transition, but the intermediate values look more like a cross-fade. They show a mixture of two faces rather than one single one with aspects of both.
 
-== Autoencoders for generative modelling ==
+This is called interpolation. What it shows us is that in the region of latent space where we find the data, all points decode to realistic looking people. Perhaps not quite as good as the data itself, but a pretty good start.
+
+## Autoencoders for generative modelling
+
+Generative modelling is the business of building a probability distribution for your data that you can sample from. For instance, our dataset of human faces was sampled from some distribution. If we fit a distribution to that data that we can sample from, and it fits well, then those samples should be realistic portrait pictures of people that don't exist.
+
+What we have just shown is that the space around the latent representations of our data is full of such points. If we can somehow pick a random point that is in the same region as our data, and decode it, we should get a good picture of a human face.
+
+The only problem is, how do we capture which region of the latent space our data lies in? Where in the latent space do we find the points that decode to good-quality images? A simple trick is to assume that the data in latent space is normally distributed. After we have trained our autoencoder, we simply fit a normal distribution to the latent representation of our training data. 
+
+Sampling from this distribution gives us a vector in $\R^m$ that is likely to be be near the datapoints and so to decode well. If we then feed this point to the decoder, we get a picture of a human being. ?Here are some examples for our AE.
 
 
-== Stacked and denoising autoencoders ==
+This is all a little ad-hoc. Intuitively we know that we are "fitting" a model to our data, but we don't really know what we're optimizing for or whether any of our assumptions hold. Normally when we fit a probability distribution, we like to take some objective, [like the total probability density of our data under the model](maximum likelihood), and then to choose the model to maximize this quantity.
 
+It's possible to start with just a [generator network](/generator-network)&mdash;which maps a random vector to an image&mdash; and this kind of objective, and to derive, step-by-step, an auto-encoder model. The result is called a [variational autoencoder or VAE](/vae)
+
+## Stacked and denoising autoencoders
+
+TODO
 
 
 
