@@ -70,10 +70,11 @@ We map each subset to their latent representations and compute the averages: $\z
 
 We can treat $\z_s$ as a a _direction_ in latent space. If we take any picture of a frowning person $\x$, map it to its latent representation $\z$ and add a little bit of the smile vector to it, we should a latent representation of the same person, but smiling a bit more
 
-\[
-\]
+-- image algorithm
 
+### Interpolation
 
+What the smile vector example shows us, is that the the latent representations of the data aren't the only points in the latent space that decode to realistic looking faces. The points in between also show us quite realistic images of people. So far, variations of the people in our data, but we can push this a little farther by using _interpolation_. We simply pick two random people in the data and draw a line between them _in the latent space_. If we then pick a series 
 
 
 
