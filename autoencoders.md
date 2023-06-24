@@ -22,12 +22,25 @@ The key properties of an autoencoder are:
 
 In short, an autoencoder attempts to learn the _identity function_, $f(\x) = \x$. Normally neural networks have no trouble with this. The reason that it is challenging in this case, is that the information needs to pass through the bottleneck. The <span class="rc">encoder</span> part of the network maps the $n$-dimensional input to this $m$-dimensional representation, and the <span class="gc">decoder</span> maps it back. 
 
-As a consequence, an autoencoder that is somewhat succesfull has learned to map the high dimensional data, to a low dimensional representation. That is the encoder performs a _dimensionality reduction_. After training, we can discard the decoder, and use the encoder to map any $\x$, whether from the data or from the same source as our data, to a low-dimensional representation $\x'$.
+As a consequence, an autoencoder that is somewhat succesful has learned to map the high dimensional data, to a low dimensional representation. That is the encoder performs a _dimensionality reduction_. After training, we can discard the decoder, and use the encoder to map any $\x$, whether from the data or from the same source as our data, to a low-dimensional representation $\x'$.
 
 <div clas="aside" markdown="1">
-  If you know about [PCA](pca), 
+  If you know about [PCA](pca), you may have noted that autoencoders and PCA behave quite similarly. In fact, if we use only a singlew linear layer in the encoder and decoder and no activations, and train the autoencoder with least squares loss, the result is almost, but not quite the same as PCA. We'll spell out the difference below.
 </div>
 
+== Autoencoders for dimensionality reduction ==
+
+What is the poitn of dimensionality reduction? For PCA, the aim is often to reduce the number of features in our data, so we can fit a model to is that is too expensive to fit on the original high dimensional data. But that is only part of the picture. To illustrate the true benefits of this kind of dimentionality reduction, we can show a simple example.
+
+
+
+
+
+
+
+
+
+== Autoencoders and PCA ==
 
 
 
