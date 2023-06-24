@@ -1,4 +1,6 @@
+--- 
 title: Autoencoders
+
 ---
 
 # Summary 
@@ -44,6 +46,25 @@ Since we've given the bottleneck only two dimensions, we can actually plot the r
 
 -- See if I can get this to work. Maybe switch to simpler data.
 
+What we see is that the hidden representation captures a lot of high-level features. We see some clustering of men and women, children and older people, smiling and non-smiling people and so on. 
+
+This is the real power of a method like autoencoders: they map your high-dimensional data to a low-dimensional representation where high-level semantic features like the age or expression of the subject becomes clearly expressed as a single direction or region in the latent space.
+
+<div class="aside"> We've chosen an extremely small latent space here to be able to visualize what is happening. Normally, we don't need to visalize the latent space, and we can set $m$ much larger, making the network easier to train.
+</div>
+
+This is sometimes called _representation learning_. The main aim is not so much to learn a lower-dimensional representation of our data, but to learn a representationsa in which the propertiers we are interested in come to the surface. A mapping to a lower dimensional space is one way to achieve this, but not the only one (see, for instance, the _denoising_ autoencoders below).
+
+
+### The smile vector
+
+To show the power of representation learning, we'll try a litte experiment. We try to use the latent space of ouer autoencoder above to make a frowning person smile. Note first that our data is unlabeled. The autoencoder needs a lot of data, but it's not annotated with features, like which people are smiling and frowning. What we see in the plot, however, is that the model seems to learn what smiling is without explicit annotation. Some region in the latent space is dedicated to smiling people, and another to frowning people.
+
+-- image
+
+The key idea of the "smile vector" is that if we take a picture of a frowning person, map it to the latent space, and nudge it away from the cloud of frowning people and towards the cloud of smiling people, but keep all the other dimensions the same, we get a poitn in the latent space that represents the same person, but smiling instead of frowning.
+
+All we need to achieve this, is to find the broad regions in latent space where the model puts smiling people and where it puts frowning people. We need a little bit of annotated data here, but not much: about twenty examples of smiling people and twenty examples of frowning people.
 
 
 
@@ -52,8 +73,7 @@ Since we've given the bottleneck only two dimensions, we can actually plot the r
 == Autoencoders for generative modelling ==
 
 
-
-
+== Stacked and denoising autoencoders ==
 
 
 
