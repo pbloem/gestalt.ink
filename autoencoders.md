@@ -30,7 +30,12 @@ As a consequence, an autoencoder that is somewhat succesful has learned to map t
 
 == Autoencoders for dimensionality reduction ==
 
-What is the poitn of dimensionality reduction? For PCA, the aim is often to reduce the number of features in our data, so we can fit a model to is that is too expensive to fit on the original high dimensional data. But that is only part of the picture. To illustrate the true benefits of this kind of dimentionality reduction, we can show a simple example.
+What is the point of dimensionality reduction? For PCA, the aim is often to reduce the number of features in our data, so we can fit a model to is that is too expensive to fit on the original high dimensional data. But that is only part of the picture. To illustrate the true benefits of this kind of dimentionality reduction, we can show a simple example.
+
+Imagine that we have a dataset of small $64 \times 64$ pixel, color images of people's faces. Each pixel in each image is represented by three numbers (the amount of red, green and blue respectively), so the whole image can be represented by a vector of $64 \times 64 \times 3 =12\:288$ values
+
+== Autoencoders for generative modelling ==
+
 
 
 
