@@ -22,7 +22,9 @@ The key properties of an autoencoder are:
 
 In short, an autoencoder attempts to learn the _identity function_, $f(\x) = \x$. Normally neural networks have no trouble with this. The reason that it is challenging in this case, is that the information needs to pass through the bottleneck. The <span class="rc">encoder</span> part of the network maps the $n$-dimensional input to this $m$-dimensional representation, and the <span class="gc">decoder</span> maps it back. 
 
-As a consequence, an autoencoder that is somewhat succesful has learned to map the high dimensional data, to a low dimensional representation. That is the encoder performs a _dimensionality reduction_. After training, we can discard the decoder, and use the encoder to map any $\x$, whether from the data or from the same source as our data, to a low-dimensional representation $\x'$.
+As a consequence, an autoencoder that is somewhat succesful has learned to map the high dimensional data, to a low dimensional representation. That is the encoder performs a _dimensionality reduction_. After training, we can discard the decoder, and use the encoder to map any $\x$, whether from the data or from the same source as our data, to a low-dimensional representation $\z$. 
+
+We call $\z$ the _latent representation_ of $\x$. That is, the encoder computes a function $\x \to z$ and the decoder computes (approximately) $\x \to \z$.
 
 <div clas="aside" markdown="1">
   If you know about [PCA](pca), you may have noted that autoencoders and PCA behave quite similarly. In fact, if we use only a singlew linear layer in the encoder and decoder and no activations, and train the autoencoder with least squares loss, the result is almost, but not quite the same as PCA. We'll spell out the difference below.
@@ -32,7 +34,11 @@ As a consequence, an autoencoder that is somewhat succesful has learned to map t
 
 What is the point of dimensionality reduction? For PCA, the aim is often to reduce the number of features in our data, so we can fit a model to is that is too expensive to fit on the original high dimensional data. But that is only part of the picture. To illustrate the true benefits of this kind of dimentionality reduction, we can show a simple example.
 
-Imagine that we have a dataset of small $64 \times 64$ pixel, color images of people's faces. Each pixel in each image is represented by three numbers (the amount of red, green and blue respectively), so the whole image can be represented by a vector of $64 \times 64 \times 3 =12\:288$ values
+Imagine that we have a dataset of small $64 \times 64$ pixel, color images of people's faces. Each pixel in each image is represented by three numbers (the amount of red, green and blue respectively), so the whole image can be represented by a vector of $64 \times 64 \times 3 =12\,288$ values.
+
+We build the following network, and train it for a few epochs (i.e. we do a few passes over the data).
+
+Since we've given the bottleneck only two dimesnions, we can actually plot the results to 2d axes. We compute the latent $(z_1, z2)$ representation of all the images in our validation data, and then plot each original image at the latent coordinates $z_1$ and $z_2.$
 
 == Autoencoders for generative modelling ==
 
