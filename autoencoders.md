@@ -38,7 +38,16 @@ Imagine that we have a dataset of small $64 \times 64$ pixel, color images of pe
 
 We build the following network, and train it for a few epochs (i.e. we do a few passes over the data).
 
-Since we've given the bottleneck only two dimesnions, we can actually plot the results to 2d axes. We compute the latent $(z_1, z2)$ representation of all the images in our validation data, and then plot each original image at the latent coordinates $z_1$ and $z_2.$
+-- network
+
+Since we've given the bottleneck only two dimensions, we can actually plot the results to 2d axes. We compute the latent $(z_1, z2)$ representation of all the images in our validation data, and then plot each original image at the latent coordinates $z_1$ and $z_2$. Here is the result:
+
+-- See if I can get this to work. Maybe switch to simpler data.
+
+
+
+
+
 
 == Autoencoders for generative modelling ==
 
