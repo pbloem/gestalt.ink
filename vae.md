@@ -44,11 +44,15 @@ p_\theta(\t \mid \x) \p
 The higher this value is for the true target value $\t$ the better the network does. This gives us a clear training objective. Maximize this value over all pairs in the data. Since logarithms of probabilities are easier to work with, we usually stick a log in front of the probability, maximizing the log-probability instead of the probability. Finally, since we like to minimize things, we stick a minus in front of that. This gives us the following training objective
 
 \[
-\argmin_\theta \prod_{\x, \t \in \text{Data}} p_\theta(\t \mid \x)
+\argmin_\theta \prod_{\x, \t \in \text{Data}} p_\theta(\t \mid \x) \p
 \]
 
+Here, $p_\theta$ encapsulates both our choice of network architecture and the probability function it parametrizes.
 
 ### Adding randomness at the input
+
+
+
 
 ## Step 2: The "encoder"
 
