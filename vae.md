@@ -66,7 +66,9 @@ We can make the output distribution multi-modal, for instance with a Gaussian mi
 
 In short, this probability ditribution doesn't look like a smooth landscape with a handfull of distinct peaks, it's more like a rough mountainous landscape with long ridges of high probability. 
 
-To model this kind of landscape, we need the powe of the neural network to help us describe the exact shape of the probability distribution. A simple way of achieving this is to start with a simple, unimodal distribution
+To model this kind of landscape, we need the powe of the neural network to help us describe the exact shape of the probability distribution. A simple way of achieving this is to start with a simple, unimodal distribution, like the standard multivariate normal distribution $N({\mathbf 0}, {\mathbf I})$, and _let the network transform it_.
+
+Since we're only interested in sampling from our distribution, the process is very simple. We sample a vector $\z$ from $N({\mathbf 0}, {\mathbf I})$ and we feed it to a neural network $f$, observing the output: $\y = f(\z)$. This is a random process, so we can think of it as _sampling_ from some probability distribution. 
 
 
 ## Step 2: The "encoder"
