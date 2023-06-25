@@ -86,3 +86,44 @@ The result is a complex multi-modal distribution $p(\x)$ on the high-dimensional
 \[
 p(\x \mid \z) = N(\x \mid \oc{\mathbf \mu}, \bc{\mathbf \sigma}) \;\;\;\text{with } \oc{\mathbf \mu}, \bc{\mathbf \sigma} = f_\rc{\theta}(\z)
 \]
+
+# The trouble with generators: mode collapse
+
+The simplest generator network is pretty easy to define. Just sample some random noise, and stick it into a neural network. The difficulty is not in building the network, but in training it. 
+
+Here is the task: given a set of $\x$'s, say pictures of human faces, how do we adjust the parameters $\rc{\theta}$ of our neural network in such a way that the generator starts spitting out images that are like our data? That is, new human faces that look realiostic to us, but that aren't in the dataset.
+
+To illustrate the problem, let's try a naive approach and see what happens. We'll follow this algorithm.
+
+$$\begin{align*}
+&\textbf{loop:} \\
+&\tab \text{pick a random $\x$ from the data.} \\
+&\tab \text{sample } \z ~ $N({\mathbf 0}, {\mathbf I})$ \\
+&\tab \text{train } \y = f_\rc{\theta}(x) \text{ to be like } \x \\
+\end{align*}$$
+
+In short, we sample a random point from the model, and train the model to move it closer to a randomly sampled point in the dataset
+
+The last step can be achieved with a basic loss function like the sum of squared errors, and gradient descent/brackpropagation.
+
+To see where this goes wrong, imagine that the target distribution has ten modes which are arranged in a ring. We sample a random point from the model, which can be anywhere in space. Imagine that we happen to get lucky and to land quite close to one of the modes. In that case, the model has actually done well. However, the algorithm compares it to a randomly chosen point on the ring: it's very unlikely to be the one it's already close to.
+
+-- image (faces instead of dots)
+
+The result is that even is the model is starting to get close to the modes, it will always be pulled to the center of the ring. This is the mean of the data but not a mode: it does not represent a realistic sample from the data.
+
+<aside>
+  If you do this with a dataset of faces, the result is a fuzzy picture of the average of all faces. 
+</aside>
+
+We call this _mode collapse_. Instead of sampling different faces every time, from the areas of high probability, the model returns the mean every time which comes from an area of low probability.
+
+There are a few algorithms to solve mode collapse. The most popular ones are:
+* [Variational autoencoders (VAEs)](/vae): This is a very principled approach, derived from a maximum likelihood objective. they solve the above problem by learning an inverted version of the generator network that finds a corresponding $\z$ for a given $\x$. In a sense, this tells the above algorithm which $\x$ it should be comparing its sample to (instead of picking a random one).
+* [Invertible flows](/flows) VAEs optimize maximum likelihood for any generator network you can think of. The price we pay is that we optimize the likelihood indirectly, using a lower bound rather than the actual likelihood. If we constrain the generator network to be _invertible_, we can directly optimize the likelihood without using a lower bound.
+* [Diffusion models](/diffusion): These work by reducing the task of sampling to noise removal. Removing a small amount of noise from an image is not a task that requires a strong multimodal distribution. However, once we have a model that can do this, we can start with an entirely noisy image and apply a small denoising step over and over again, slowly building up to a fully &ldquo;denoised&rdquo; image (even though we started with noting but noise). Diffusion models have theoretical links to many other approaches, including VAEs and score based approaches.
+* [Generative adversarial networks](/gan) GANs 
+
+# More resources
+
+* MLVU Lecture: [Deep generative modeling](https://mlvu.github.io/lecture09/)
