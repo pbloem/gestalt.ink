@@ -29,6 +29,12 @@ The model that will generate these images for us is a [generator network](/gener
 * We feed $\z$ to a neural network $f$ with parameters $\theta$ and interpret the output $\y = f_\theta(\x)$ as the parameters of an _output distribution_. to keep things concrete, we assume this is a Gaussian distribution with a diagonal covariance. That is we split $\y$ into two vectors $\oc{\mathbf \mu}$ and $\bc{\mathbf \sigma}$, each with 12\,288 elements (meaning that $\y must have 24\,576$ elements).
 * We use $\oc{\mathbf \mu}$ and $\bc{\mathbf \sigma}$ to define a simple, Gaussian distribution on our space of $\x$'s: N(\x \mid \oc{\mathbf \mu}, \bc{\mathbf \sigma})
 
+If we wanted to we could change the input and output distributions to pretty much anything we like, but we'll keep them both diagonal Gaussians for now.
+
+<aside>
+  By <em>diagonal Guassian</em>, we mean a multivariate normal distribution that is parameterized by a mean vector $\oc \mathbf \mu \in \R^n$ and a covariance matrix which is diagonal. This means that instead of specifying all $n^2$ elements of the covariance matrix (which would be hundreds of millions of parameters in our example), we only specify a varioance along each dimension, which means that the <span class="bc">variance</span> requires the same number of parameters as the <span class="oc">mean\bc{\mathbf \sigma}.
+</aside>
+
 See the article on [generator networks](\generator-networks) for a more detailed explanation.
 
 ## Step 2: The "encoder"
