@@ -34,7 +34,11 @@ To add randomness to the output of a neural net, we can take the output $\y$ and
 
 When we are doing multiclass classification, we usually have one output node per class, with a [softmax]() activation over the ouptut layer. The $i$-th output node, after the activation represents the probability that the $i$-th class is true for the current input. In technical terms, we are taking the output nodes as the parameters of a Categorical distribution on the classes.
 
-We can do the same with continuous distributions. For instance, if we have 10 numeric output values, we can give the network 20 outputs so that it can produce a mean and variance for each, giving us a normal distribution over every output value.
+We can do the same with continuous distributions. For instance, if we have 10 numeric output values, we can give the network 20 outputs so that it can produce a mean and variance for each, giving us a normal distribution over every output value. 
+
+<aside>You can also think of this as a multivariate normal distribution in 10 dimensions, with a diagonal covariance matrix.</aside>
+
+
 
 In all cases the objective is the same. For each input $\x$, the network gives us a _probability distribution_ on the space of target values. For a given training pair $(\x, \t)$ and network parameters $\theta$, we can write this as
 \[
@@ -54,7 +58,7 @@ Here, $p_\theta$ encapsulates both our choice of network architecture and the pr
 We have two problems with the random neural networks we have defined so far:
 
 1. They are only well defined for problems with example input/output pairs (like a classification task). With the type of problem we have here, we only have examples of the sort of thing we want the network to output. There are no corresponding inputs.
-2. The output distributions we have so far are too simple. 
+2. The output distributions we have so far are too simple. For instance, a normal distribution
 
 
 
