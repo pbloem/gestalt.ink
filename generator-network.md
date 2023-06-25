@@ -1,5 +1,21 @@
+---
+title: Generator networks
+---
 
-Before we worry about training neural networks to generate the right images, ask yourself how we train a neural network to generate random images _at all_? A neural network represents a _deterministic_ function. Once we've picked our parameters it maps some input $\x$ to some output $\y$, but it never makes any random choices. 
+# Summary
+
+Preliminaries: 
+* [Neural networks](neural-networks)
+
+A **generator network** is a name for a neural network that has been turned into a probability distribution by feeding it random data.
+
+Generator networks are easy to define, but training them is harder than training a normal neural network. For this, special algorithms, such as GANs, VAEs or diffusion are necessary. In this article, we will just set up the definition of a generator network, and why they are difficult to train. The training algorithms will each be discussed in their own articles.
+
+# Generator networks
+
+Generator networks are the first step toward generative modelling. That is, creating neural network models that generate rich data like realistic images of human faces.
+
+Before we worry about _training_ neural networks to generate the right images, ask yourself how we train a neural network to generate random images _at all_? A neural network represents a _deterministic_ function. Once we've picked our parameters it maps some input $\x$ to some output $\y$, but it never makes any random choices. To take the powe of neural networks and to use it for any kind of generation, we need to add in some randomness
 
 There are two places to add randomness to a network: at the output and at the input. The VAE does both.
 
@@ -45,4 +61,14 @@ In short, this probability ditribution doesn't look like a smooth landscape with
 
 To model this kind of landscape, we need the powe of the neural network to help us describe the exact shape of the probability distribution. A simple way of achieving this is to start with a simple, unimodal distribution, like the standard multivariate normal distribution $N({\mathbf 0}, {\mathbf I})$, and _let the network transform it_.
 
-Since we're only interested in sampling from our distribution, the process is very simple. We sample a vector $\z$ from $N({\mathbf 0}, {\mathbf I})$ and we feed it to a neural network $f$, observing the output: $\y = f(\z)$. This is a random process, so we can think of it as _sampling_ from some probability distribution. 
+Since we're only interested in sampling from our distribution, the process is very simple. We sample a vector $\z$ from $N({\mathbf 0}, {\mathbf I})$ and we feed it to a neural network $f$, observing the output: $\y = f(\z)$. This is a random process, so we can think of it as _sampling_ from some probability distribution $p$. 
+
+<aside>We don't know much about this distribution: we can't easily work out its mean or its variance, how much probability assigns to some region of space. All we can do is sample from it. That is the price we pay for using the power of neural networks.
+</aside>
+
+As an experiment, let's see what such a distribution might look like. We'll wire up a simple neural network, consisting of a 2D input layer, twelve ReLU-activated linear layers with a 100 units each, and a final 2D output layer. We feed this network a sample from a 2D standard normal distrbution, and observe the output. If we do this a few hundred thousand times, and scatterplot the result, we get a pretty good picture of the shape of the distribution we're sampling from.
+
+-- image
+
+<aside>Note that this network wasn't trained. This is simply the distribution we get at intialization. The only thing we want to show here is how unlike a normal distribution this distribution is. It doesn't have a single mode, or even a handful of modes: it has a very complex ridge-like shape.
+</aside>
