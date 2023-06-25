@@ -38,8 +38,6 @@ We can do the same with continuous distributions. For instance, if we have 10 nu
 
 <aside>You can also think of this as a multivariate normal distribution in 10 dimensions, with a diagonal covariance matrix.</aside>
 
-
-
 In all cases the objective is the same. For each input $\x$, the network gives us a _probability distribution_ on the space of target values. For a given training pair $(\x, \t)$ and network parameters $\theta$, we can write this as
 \[
 p_\theta(\t \mid \x) \p
@@ -58,8 +56,17 @@ Here, $p_\theta$ encapsulates both our choice of network architecture and the pr
 We have two problems with the random neural networks we have defined so far:
 
 1. They are only well defined for problems with example input/output pairs (like a classification task). With the type of problem we have here, we only have examples of the sort of thing we want the network to output. There are no corresponding inputs.
-2. The output distributions we have so far are too simple. For instance, a normal distribution
+2. The output distributions we have so far are too simple. For instance, a normal distribution can put the most likely output at one point in space, the mean. This is the most likely image, and all other likely points are just the points near that image. This is not how we want a generative model to behave: we want it to be able to sample multiple different possible images.
 
+This property of the normal distribution is called _unimodality_. That is, it's got one mode, one point that has the highest probability.
+
+We can make the output distribution multi-modal, for instance with a Gaussian mixture model, but this will give us a handful of modes at best. A complex distribution like the one on pictures of human faces doesn't have just a couple of modes. Every possible face functions as a mode, and as we saw in the autoencoder example, we can travel from one face to another along a path where every point is a realistic face.
+
+-- image
+
+In short, this probability ditribution doesn't look like a smooth landscape with a handfull of distinct peaks, it's more like a rough mountainous landscape with long ridges of high probability. 
+
+To model this kind of landscape, we need the powe of the neural network to help us describe the exact shape of the probability distribution. A simple way of achieving this is to start with a simple, unimodal distribution
 
 
 ## Step 2: The "encoder"
