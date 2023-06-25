@@ -23,6 +23,9 @@ To begin with, forget about autoencoders for a second. We are not setting out to
 
 To make things concrete, we will assume that we are training a VAE to generate images of 64 by 64 images, with three color channels per pixel. There can be represented in a $64 \times 64 \times 3$ tensor, or flattened into a single vectors with $12\,288$ elements. 
 
+The model that will generate these images for us is a [generator network](/generator-networks) with an output distribution. That is, we have three components:
+* The input to the neural network $\z \in \R^m$ is a vector sampled from a standard normal distribution $N({\mathbb 0}, {\mathbb I})$
+
 ## Step 2: The "encoder"
 
 ## Step 3: The evidence lower bound (ELBO)
