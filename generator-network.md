@@ -19,7 +19,7 @@ Before we worry about _training_ neural networks to generate the right images, a
 
 There are two places to add randomness to a network: at the output and at the input. The VAE does both.
 
-# Adding randomness at the output
+## Adding randomness at the output (what we normally do)
 
 To add randomness to the output of a neural net, we can take the output $\y$ and interpret it as the parameter of a probability distribution. This is nothing new: for instance, when we are doing binary classification, we can do this with one output node, apply a sigmoid activation, and interpret the resulting output as the probability that the positive class is true, according to the network. In technical terms, we ar taking the output as the parameter for a Bernoulli distribution.
 
@@ -44,7 +44,7 @@ The higher this value is for the true target value $\t$ the better the network d
 
 Here, $p_\theta$ encapsulates both our choice of network architecture and the probability function it parametrizes. This is always the aim of supervised learning. 
 
-### Adding randomness at the input
+## Adding randomness at the input (the key to generator networks)
 
 We have two problems with the random neural networks we have defined so far:
 
@@ -72,3 +72,12 @@ As an experiment, let's see what such a distribution might look like. We'll wire
 
 <aside>Note that this network wasn't trained. This is simply the distribution we get at intialization. The only thing we want to show here is how unlike a normal distribution this distribution is. It doesn't have a single mode, or even a handful of modes: it has a very complex ridge-like shape.
 </aside>
+
+This type of network, one which is fed with random noise, is what we call **a generator network**. 
+
+## Doing both
+
+In some cases, like in a [VAE](/vae), we are required to also put a probability distribution on the output of the network, for instance with a normal distribution. In that case, the whole sampling process looks like this:
+* Sample $\z$ from $N({\mathbf 0}, {\mathbf I})$.
+* Let the neural network compute $\oc{\mathbf \mu}, \bc{\mathbf \sigma} \leftarrow f(\z)$.
+* Sample the output $\x$ from $N(\oc{\mathbf \mu}, \bc{\mathbf \sigma})$.
