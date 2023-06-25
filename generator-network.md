@@ -79,5 +79,10 @@ This type of network, one which is fed with random noise, is what we call **a ge
 
 In some cases, like in a [VAE](/vae), we are required to also put a probability distribution on the output of the network, for instance with a normal distribution. In that case, the whole sampling process looks like this:
 * Sample $\z$ from $N({\mathbf 0}, {\mathbf I})$.
-* Let the neural network compute $\oc{\mathbf \mu}, \bc{\mathbf \sigma} \leftarrow f(\z)$.
+* Let the neural network, with parameters $\rc{\theta}$ compute $\oc{\mathbf \mu}, \bc{\mathbf \sigma} \leftarrow f_\rc{\theta}(\z)$.
 * Sample the output $\x$ from $N(\oc{\mathbf \mu}, \bc{\mathbf \sigma})$.
+
+The result is a complex multi-modal distribution $p(\x)$ on the high-dimensional space of $\x$. If we take $\z$ as given, we can say that the network computes the simple, unimodal distribution 
+\[
+p(\x \mid \z) = N(\x \mid \oc{\mathbf \mu}, \bc{\mathbf \sigma}) \;\;\;\text{with } \oc{\mathbf \mu}, \bc{\mathbf \sigma} = f_\rc{\theta}(\z)
+\]
