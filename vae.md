@@ -6,6 +6,7 @@ title:Variational Autoencoder
 
 Preliminaries:
 * [Neural networks](/neural-networks)
+* [Generator networks](/generator-network)
 * [Autoencoders](/autoencoders)
 
 **Autoencoders** are hourglass-shaped neural networks that can be user for many things, including _generative modelling_.
