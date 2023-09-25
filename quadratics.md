@@ -4,9 +4,11 @@ Title: Quadratics in linear algebra
 
 # Quadratics in linear algebra
 
-<ul class="dep">
-<li><a href="">Linear algebra</a></li>
-</ul>
+<div class="prel">preliminaries:</div>
+* [Linear algebra](linear-algebra)
+
+<div class="prel">status:</div>
+* work in progress
 
 A **quadratic** or **quadratic function** is a [polynomial](polynomial) whose highest-order term is a square. For instance $f(x) = 3x^2 + x -3$ is a quadratic.
 

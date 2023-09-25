@@ -468,6 +468,11 @@ figure img.right {
 	min-width: 150px;
 }
 
+#body figure .two-thirds {
+	width: 66.6%;
+	min-width: 150px;
+}
+
 #body dl {
 	padding: 0;
 }
@@ -622,7 +627,7 @@ div#footer #timestamp {
 }
 
 .qed::before {
-	color: #677d00;
+	color: #bbb;
 	content: "□";
 }
 
@@ -738,22 +743,59 @@ div.sample
 
 }
 
+#body div.theorem strong.title,
+#body div.theorem h5 {
+	color: #677d00;
+	font-size: 1em;
+}
+
 #body div.theorem.proof-omitted
 {
 	border-bottom: none;
+	margin-bottom: 1em;
 }
 
+
+#body div.theorem.false
+{
+	border-left: solid 4px #b13e26;
+
+}
+
+#body div.theorem.false strong.title,
+#body div.theorem.false h5 {
+	color: #b13e26;
+	display: inline;
+}
 
 #body div.proof 
 {
 	position: relative;
 	left: -4px;
 
-	margin: -1px auto 0 auto;
+	margin: -1px auto 1em auto;
 	padding: 0 1em;
 	
 	border-left: solid 4px #bbb;
 }
+
+#body div.proof strong.title,
+#body div.proof h5
+{
+	color: #bbb;
+	font-size: 1em;
+	display: inline;
+}
+
+#body div.proof h5,
+#body div.theorem h5
+{
+	float: left;
+	width: max-content;
+	margin: 0;
+	padding: 0 1em 0 0;
+}
+
 
 .proof-section {
 	text-transform: uppercase;
@@ -884,7 +926,37 @@ div.sample
 
 }
 
-
 #body.home section div li::before {
 	content: none;
+}
+
+ul#markdown-toc 
+{
+
+	margin: 0 0 2em 0;
+	padding: 1em 0 0 0;
+	list-style: none;
+	
+	border-top: solid black 1px;
+	border-bottom: solid black 1px;
+	
+}
+
+ul#markdown-toc li  
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+ul#markdown-toc li::before {
+	content: none;
+	
+}
+
+ul#markdown-toc ul {
+
+}
+ul#markdown-toc  li li {
+	margin-left: 1em;
 }

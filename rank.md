@@ -5,6 +5,8 @@ Title: Matrix rank
 ---
 
 # Matrix rank
+<div class="prel">status:</div>
+* work in progress
 
 ## Summary
 

@@ -12,23 +12,23 @@ The result is that the concept of numbers is one of those that we have to "come 
 
 ## Summary
 
-You know what numbers are. We start learning about numbers in math long before we learn to define things rigorously. 
+You know what numbers are. Numbers are probably the first aspect of mathematics most of us learn about. We learn about them long before we start being rigorous.
 
-The result is that the concept of numbers is one of those that we have to "come back to" after we've learned a bit of math, in order to treat them with a bit more deference and see how they should be defined properly.
+The result is that "numbers" as a concept is so intuitive to us, that it takes an active mental effort to make our assumptions about them explicit. This is necessary, however, to define them properly. We must, as they say, unlearn what we've learned.
 
-For basic mathematics, we don't need to dig to deep into the different types of numbers that exist. We just need for families of numbers. For each we describe the _set_ of all possible numbers with a capital letter in blackboard script like $\mathbb N$, $\mathbb Z$, $\mathbb Q$ or $\mathbb R$. 
+To understand basic university-level mathematics, we don't need to dig too deep into the different types of numbers that exist. We just need four families of numbers. For each we describe the _set_ of all possible numbers with a capital letter in blackboard script like $\mathbb N$, $\mathbb Z$, $\mathbb Q$ or $\mathbb R$. 
 
 We will discuss:
 
-* The <span class="oc">natural numbers</span> $\oc{\mathbb N}$: $0, 1, 2, 3, \ldots$ (sometimes defined without 0 included).
+* The <span class="oc">natural numbers</span> $\oc{\mathbb N}$: $0, 1, 2, 3, \ldots$ (sometimes defined without $0$ included).
 * The <span class="gc">integers</span> $\gc{\mathbb Z}$: $\ldots, -3, -2, -1, 0, 1, 2, 3, \ldots$ That is, the natural numbers together with their negative counterparts.
-* The <span class="bc">rational numbers</span> $\bc{\mathbb Q}$: Numbers like $\frac{22}{400}$, $-\frac{1}{2}$. Anything that can be written one integer divided by another integer
+* The <span class="bc">rational numbers</span> $\bc{\mathbb Q}$: Numbers like $\frac{22}{400}$, $-\frac{1}{2}$. Anything that can be written as one integer divided by another integer
 * The <span class="rc">real numbers</span> $\rc{\mathbb R}$: Any number that can be written as a decimal like $675.1233\ldots$, with potentially infinitely many numbers after the decimal point.
 
 <aside>Note that it isn't the <em>representation</em> that's important here. The number $0.5$ is written in a decimal expansion, so it's a real number, but it can also be written as $\frac{1}{2}$ so it's also a rational number.
 </aside>
 
-The main thing you'll need to remember is what these four families are, how they are defined and some of the subtleties about them. One thing we'll gove away right now is that these are all subsets of each other: every <span class="oc">natural</span> number is an <span class="gc">integer</span>, every <span class="gc">integer</span> is a <span class="bc">rational</span> number and every <span class="bc">rational</span> number is a <span class="rc">real</span> number. 
+The main thing you'll need to remember is what these four families are, how they are defined and some of the subtleties about them. One thing we'll give away right now is that these are all subsets of each other: every <span class="oc">natural</span> number is an <span class="gc">integer</span>, every <span class="gc">integer</span> is a <span class="bc">rational</span> number and every <span class="bc">rational</span> number is a <span class="rc">real</span> number. 
 
 They are also _strict subsets_: there are <span class="rc">real</span> numbers that aren't <span class="bc">rational</span> numbers, there are <span class="bc">rational</span> numbers that aren't <span class="gc">integers</span> and there are <span class="gc">integers</span> that aren't <span class="oc">natural</span> numbers.
 
@@ -40,15 +40,15 @@ $$
 
 ## <span class="oc">The natural numbers</span>
 
-The **natural numbers** are also called the **counting numbers**. They are a set of numbers we use for talking about amounts of things. Apples seem to be the canonical example. I can have $0$ apples, or $1$ apple, or $2$ apples. 
+The **natural numbers** are also called the **counting numbers**. They are a set of numbers we use for talking about amounts of things. Apples seem to be the canonical example. I can have $0$ apples, or $1$ apple, or $2$ apples and so on. 
 
-They are also called the _whole numbers_, because we do not cut our apples into chunks. The numbers can only be used to count quantities of whole objects. Other than that any amount you can have of something is a natural number.
+They are also called the _whole numbers_, because we do not, for the moment, cut our apples into chunks. The numbers can only be used to count quantities of whole objects. Other than that, any amount you can have of something is a natural number.
 
-Whether $0$ is contained in the natural numbers is a bone of contention among mathematicians. Some people define $\oc{\mathbb N}$ to include 0 and some don't. In these articles, I'll try to stick with the convention that $0$ is included. 
+<aside>Whether $0$ is contained in the natural numbers is a bone of contention among mathematicians. Some people define $\oc{\mathbb N}$ to include $0$ and some don't. In these articles, I'll try to stick with the convention that $0$ is included. </aside>
 
 If you're writing your own math where this is relevant, it's best to define $\oc{\mathbb N}$ explicitly to avoid any ambiguity.
 
-In the article on [set theory](/set-theory), we explained how to represent the natural numbers using just the language of set theory and nothing else. To summarize
+In the article on [set theory](/set-theory), we explained how to represent the natural numbers using just the language of set theory and nothing else. To summarize:
 
 * The number $0$ is represented by the empty set $\{\}$.
 * For any number, we define its _successor_ as the set containing all numbers below it.
@@ -56,7 +56,7 @@ In the article on [set theory](/set-theory), we explained how to represent the n
 You can use natural numbers perfectly well without thinking of them as sets, but it's nice to know that there is a rigorous definition for them that makes sense. With this we can start to define the operations on the natural numbers we alrady know.
 
 * The _successor operation_ is just picking the next natural number along. We could write it as $n+ 1$, except we've not defined addition yet. From the definition, we can see that the succesor operation is always defined for any natural number.
-* We can define _adddition_ as repeating the successor operation a given number of times. Starting with a natural number like $\rc{4}$, we can apply the successor operation <span class="bc">three times</span>. The result is $\rc{4} + \bc{3} = 7$. Note that this is something we can also do the other way around: start with the number $\rc{3}$ and apply the successor operation <span class="bc">four times</span>. We can _prove_, with a little bit of set theory, that the result is the same in both cases, but the defintion is asymmetrical.
+* We can define _adddition_ as repeating the successor operation a given number of times. Starting with a natural number like $\rc{4}$, we can apply the successor operation <span class="bc">three times</span>. The result is $\rc{4} + \bc{3} = 7$. Note that this is something we can also do the other way around: start with the number $\rc{3}$ and apply the successor operation <span class="bc">four times</span>. It turns out that these result in the same number, so the operation of addition is symmetrical $(\rc{4} + \bc{3} = \bc{3} + \rc{4})$, but the _definition_ is asymmetrical.
 * Since repeating the successor operation worked well for us, maybe we can repeat the addition operation as well. This gives us _multiplication_ Take the action of applying the successor operation three times ($\bc{+3}$) and repeat it <span class="gc">five times</span>. The number you end up adding is equal to $\bc{3} \times \gc{5}$. Again, the definition is not symmetric, but we can prove that $\bc{3} \times \gc{5} = \gc{5} \times \bc{3}$.
 * Applying the same trick again, we can see what happens if we repeatedly multiply a number. Take the multiplication by $\gc{5}$ form the previous definition and repeat it <span class="oc">three times</span>. The result, of course, is exponentiation: $\gc{5}^\oc{3}$.
 
@@ -87,12 +87,53 @@ $$
 3.141592 \ldots
 $$
 
-The sequence of digits after the decimal can be expanded further to make this representation more precise. If we can define an infinite sequence of digits, then the real numbers are those that can be "written" as any finite sequence of digits, a decimal point, and an infinite sequence of digits.
+The sequence of digits after the decimal can be expanded further to make this representation more precise. If we allow ourselves to use infinite sequences of digits, then the reals are those numbers that can be written as a finite sequence of digits before the decimal point, and an infinite sequence after. 
 
 <aside>The inifinite sequence doesn't have to be as complex as it is in the case of $\pi$. For instance, the rational number $\frac{1}{2}$ can be written as $0.5000\ldots$.
 </aside>
 
 Like with the <span class="bc">rationals</span>, we do end up with some doubles: the number 1 can be written as $1.000\ldots$ or as $0.999\ldots$. If we inspect these carefully, after making rigorous definitions, we find that they refer to the same number. However, if we accept that such equivalent representations exist, we can think of set of reals very naturally as all numbers that can be expressed in this manner.
+
+If it makes you uncomfortable to define a set of numbers based on something as unpredictiable and poorly defined as an infinite sequence, then you are in good company. A proper definition of the reals would be more careful than this. As a result, it's also a bit more involved. 
+
+To define the reals more rigorously, we can work with _approximations_. Take, for instance, the number $\sqrt{2}$. In a room with sides of 1 meter, this is the distance from one corner to the corner opposite.
+
+-- image
+
+First things first: can we express $p$ as a <span class="bc">rational number</span>? This is one of those classic problems. For many people, the first proof they ever see. If you haven't seen it before, here it is.
+
+<div class="theorem">
+$\sqrt{2} \notin \bc{\mathbb Q}$.
+</div>
+<div class="proof" markdown="1">
+Assume [towards a contradiction](/proofs) that $\sqrt{2}$ _can_ be written as a rational. That is we assume that there are integers $\bc{p}$ and $\rc{q}$ so that 
+
+$$
+\frac{\bc{p}}{\rc{q}} = \sqrt{2}
+$$
+
+or, equivalently
+
+$$
+\frac{\bc{p}^2}{\rc{q}^2} = 2 \p
+$$
+
+We can also assume that whoever provided us with this rational expression of $\sqrt{2}$ took the trouble to give us an irreducible fraction. That is, $\bc{p}$ and $\rc{q}$ have no common divisor: we cannot simplify the fraction $\frac{\bc{p}}{\rc{q}}$. 
+
+We can now rewrite:
+
+$$\begin{align*}
+\bc{p}^2 &= 2\rc{q}^2} \\
+\frac{1}{2}\bc{p}\bc{p} &= \rc{q}\rc{q}} \p \\
+\end{align*}$$
+
+
+
+
+<span class="qed"></span>
+</div>
+
+
 
 ## Breaking out of the reals
 

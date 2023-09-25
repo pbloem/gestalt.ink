@@ -3,6 +3,9 @@ title: the binomial theorem
 summary: "The binomial theorem is a generalization of [the rule](square-sum) that says that (a + b)^2 = a^2 + 2ab + b^2."
 ---
 
+* toc
+{:toc}
+
 # The binomial theorem
 
 ## Summary

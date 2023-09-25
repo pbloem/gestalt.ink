@@ -1,5 +1,5 @@
 ---
-title:Variational Autoencoder
+title: Variational Autoencoder
 ---
 
 # Summary
@@ -56,4 +56,3 @@ The distribution that we _don't_ have easy access to is $\gc{p_\theta}(\z \mid \
 
 ## Better output distributions
 
-## 

@@ -4,6 +4,8 @@ title: matrix multiplication
 ---
 
 # Matrix multiplication
+<div class="prel">status:</div>
+* work in progress
 
 ## Summary
 
@@ -23,13 +25,12 @@ This requires that
 
 If these two conditions aren't met, we cannot multiply $\rc{\A}$ by $\gc{\B}$ to produce $\bc{C}$. 
 
-
 ## Perspectives
 
-- Every element is a dot product.
+### Every element is a dot product.
 
-- The whole matrix is a sum of outer products.
+### The product matrix is a sum of outer products.
 
-- Distributing over matrix concatenation.
-- 
 ## Commutativity
+
+## Distributing over matrix concatenation.

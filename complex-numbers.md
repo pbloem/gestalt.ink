@@ -26,7 +26,7 @@ $$
 \bc{r} + \rc{c}i
 $$
 
-where $\bc{r}$ and $\rc{c}$ are real numbers.
+where $\bc{r}$ and $\rc{c}$ are real numbers. 
 
 To give you a hint of the most important ideas coming, up, we can start with how the complex numbers are usually visualized. Where the real numbers are often visualized as lying on a line, the complex numbers are often visualized as lying in a plane, called the **complex plane**. 
 
