@@ -93,7 +93,7 @@ The symbol □, the _tombstone_, tells you where the proof ends.
 In older texts, you often see the initialism Q.E.D. instead, which stands for _quod erat demonstrandum_, or "which was to be demonstrated." 
 </aside>
 
-The structure of this proof is hopefully simple enough to be obvious. In the first line we pick two specific numbers $\rc{a}$ and $\bc{b}$, but we only assume that they are even. Any other properties they may have, we ignore. Therefore, whatever we conclude about them (in this case that their sum is even) muist hold for all pairs of even numbers.
+The structure of this proof is hopefully simple enough to be obvious. In the first line we pick two specific numbers $\rc{a}$ and $\bc{b}$, but we only assume that they are even. Any other properties they may have, we ignore. Therefore, whatever we conclude about them (in this case that their sum is even) must hold for all pairs of even numbers.
 
 <aside>One ever-present danger is that you make an additional assumption somewhere in your proof without noticing that you've done so. This is probably the most common way in which seemingly correct proofs turn out to be flawed. 
 </aside>
