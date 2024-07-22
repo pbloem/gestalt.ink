@@ -52,7 +52,7 @@ This is not the mathematical mindset. It's not precise enough. It doesn't undeni
 
 To prove that two even numbers _always_ sum to another even number, we first need to state our problem very precisely. 
 
-We start with a _definition_ of exactly what it means for a number to be even. You may have heard this defined as "being divisble by 2 without remainder", but that is a bit of an involved definition, we'd need to make precise what these remainders are, and so on. A neater definition uses multiplication, rather than definition:
+We start with a _definition_ of exactly what it means for a number to be even. You may have heard this defined as "being divisble by 2 without remainder", but that is a bit of an involved definition, we'd need to make precise what these remainders are, and so on. A neater definition uses multiplication, rather than division:
 
 <div class="theorem proof-omitted" markdown="1"><strong>Definition.</strong>
 A [natural number](/numbers) $\gc{n}$ is _even_ [if and only if](/iff) there exists another natural number $\bc{m}$ so that $\gc{n} = 2\bc{m}$.
