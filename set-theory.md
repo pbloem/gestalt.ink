@@ -236,9 +236,9 @@ consists of those elements that are in $\bc{x}$ minus those that are also in $\r
 * singleton
 : A _singleton_ is a set of cardinality 1. The singleton _of an element_ is the set containing just that element.
 * pair
-: A _pair_ is any set containing two elements. Written as $\\{a, b\\}$
+: A _pair_ is any set containing two elements. Written as $\\{a, b\\}$. Note that $\\{a, b\\} = \\{b, a\\}$.
 * ordered pair
-: An ordered pair is also a set with two elements, but with an ordering over the two specified. That is, if the two elements are not equal, we know which one comes first and which one comes second. Written as $(a, b)$. 
+: An ordered pair is also a set with two elements, but with an ordering over the two specified. That is, if the two elements are not equal, we know which one comes first and which one comes second. Written as $(a, b)$. This means that $(a, b) \neq (b, a)$.
 * tuple
 : An extension of the idea of a pair to more elements. A $4$-tuple is an ordered collection of $4$ elements, written as $(a, b, c, d)$.
 
