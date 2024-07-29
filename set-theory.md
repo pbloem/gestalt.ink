@@ -309,7 +309,7 @@ $$
 
 <p>If the set $R$ is a relation, then instead of writing $(a, b) \in R$ and saying <em>the pair $(a, b)$ is in</em> $R$, we often write $R(a, b)$ and say the relation $R$ <em>holds for</em> $a$ and $b$.</p>
 
-The reason is that relations often express connections between objects, and this is a more natural way to talk about connections. For instance, the following statements could in natural language could all be translated to a statement about a pair and a relation over a suitable universe:
+The reason is that relations often express connections between objects, and this is a more natural way to talk about connections. For instance, the following statements in natural language could all be translated to a relation between two elements in some suitable universe:
 
 * Mary is the mother of Douglas.
 * Chloe Zhao was born in 1982.
