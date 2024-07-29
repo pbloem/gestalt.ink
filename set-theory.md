@@ -314,7 +314,7 @@ The reason is that relations often express connections between objects, and this
 * Mary is the mother of Douglas.
 * Chloe Zhao was born in 1982.
 * $\bc{2}$ is the successor of $\gc{1}$.
-* 3 is smaller that 15.
+* 3 is smaller than 15.
 
 If we replace the pairs in the definition of a relation by $n$-tuples, we get an **$n$-ary relation**. for instance, over the universe of all director, actors and movies, we could define the 1-ary relation, $O(\bc{x})$ that holds if person $\bc{x}$ has won an oscar, or we define the 3-ary relation $S(\bc{x}, \rc{y}, z)$ that holds if $\bc{x}$ is an actor, that starred in movie $\rc{y}$ which was directed by director $z$.
 
