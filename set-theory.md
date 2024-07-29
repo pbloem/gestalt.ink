@@ -207,9 +207,9 @@ It is written with the $\cap$ symbol. For example
 
 The **complement** of a set $\bc{x}$ is the set of things that _aren't_ in $\bc{x}$. If the context makes it clear what the universe of objects is, then we can write the complement simply with a vertical bar: $\overline{\bc{x}}$. For instance, if we are talking about the natural numbers, then 
 $$
-\overline{\{2, 4, 6, 8, \ldots\}}
+\overline{\{0, 2, 4, 6, 8, \ldots\}}
 $$
-<p>represents the odd numbers $\{0, 1, 3, 5, \ldots\}$</p>
+<p>represents the odd numbers $\{1, 3, 5, \ldots\}$</p>
 
 If it is not clear from context what the universe is we can define it more precisely as the **relative complement** between two sets, also known as the **set difference**. The set difference between $\bc{x}$ and $\rc{y}$, written as 
 
