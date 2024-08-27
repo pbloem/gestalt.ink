@@ -207,9 +207,9 @@ It is written with the $\cap$ symbol. For example
 
 The **complement** of a set $\bc{x}$ is the set of things that _aren't_ in $\bc{x}$. If the context makes it clear what the universe of objects is, then we can write the complement simply with a vertical bar: $\overline{\bc{x}}$. For instance, if we are talking about the natural numbers, then 
 $$
-\overline{\{2, 4, 6, 8, \ldots\}}
+\overline{\{0, 2, 4, 6, 8, \ldots\}}
 $$
-<p>represents the odd numbers $\{0, 1, 3, 5, \ldots\}$</p>
+<p>represents the odd numbers $\{1, 3, 5, \ldots\}$</p>
 
 If it is not clear from context what the universe is, we can define it more precisely as the **relative complement** between two sets, also known as the **set difference**. The set difference between $\bc{x}$ and $\rc{y}$, written as 
 
@@ -236,9 +236,9 @@ consists of those elements that are in $\bc{x}$ minus those that are also in $\r
 * singleton
 : A _singleton_ is a set of cardinality 1. The singleton _of an element_ is the set containing just that element.
 * pair
-: A _pair_ is any set containing two elements. Written as $\{a, b\}$
+: A _pair_ is any set containing two elements. Written as $\\{a, b\\}$. Note that $\\{a, b\\} = \\{b, a\\}$.
 * ordered pair
-: An ordered pair is also a set with two elements, but with an ordering over the two specified. That is, if the two elements are not equal, we know which one comes first and which one comes second. Written as $(a, b)$. 
+: An ordered pair is also a set with two elements, but with an ordering over the two specified. That is, if the two elements are not equal, we know which one comes first and which one comes second. Written as $(a, b)$. This means that $(a, b) \neq (b, a)$.
 * tuple
 : An extension of the idea of a pair to more elements. A $4$-tuple is an ordered collection of $4$ elements, written as $(a, b, c, d)$.
 
@@ -309,12 +309,12 @@ $$
 
 <p>If the set $R$ is a relation, then instead of writing $(a, b) \in R$ and saying <em>the pair $(a, b)$ is in</em> $R$, we often write $R(a, b)$ and say the relation $R$ <em>holds for</em> $a$ and $b$.</p>
 
-The reason is that relations often express connections between objects, and this is a more natural way to talk about connections. For instance, the following statements could in natural language could all be translated to a statement about a pair and a relation over a suitable universe:
+The reason is that relations often express connections between objects, and this is a more natural way to talk about connections. For instance, the following statements in natural language could all be translated to a relation between two elements in some suitable universe:
 
 * Mary is the mother of Douglas.
 * Chloe Zhao was born in 1982.
 * $\bc{2}$ is the successor of $\gc{1}$.
-* 3 is smaller that 15.
+* 3 is smaller than 15.
 
 If we replace the pairs in the definition of a relation by $n$-tuples, we get an **$n$-ary relation**. for instance, over the universe of all director, actors and movies, we could define the 1-ary relation, $O(\bc{x})$ that holds if person $\bc{x}$ has won an oscar, or we define the 3-ary relation $S(\bc{x}, \rc{y}, z)$ that holds if $\bc{x}$ is an actor, that starred in movie $\rc{y}$ which was directed by director $z$.
 

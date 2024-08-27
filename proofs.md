@@ -52,7 +52,7 @@ This is not the mathematical mindset. It's not precise enough. It doesn't undeni
 
 To prove that two even numbers _always_ sum to another even number, we first need to state our problem very precisely. 
 
-We start with a _definition_ of exactly what it means for a number to be even. You may have heard this defined as "being divisble by 2 without remainder", but that is a bit of an involved definition, we'd need to make precise what these remainders are, and so on. A neater definition uses multiplication, rather than definition:
+We start with a _definition_ of exactly what it means for a number to be even. You may have heard this defined as "being divisble by 2 without remainder", but that is a bit of an involved definition, we'd need to make precise what these remainders are, and so on. A neater definition uses multiplication, rather than division:
 
 <div class="theorem proof-omitted" markdown="1"><strong>Definition.</strong>
 A [natural number](/numbers) $\gc{n}$ is _even_ [if and only if](/iff) there exists another natural number $\bc{m}$ so that $\gc{n} = 2\bc{m}$.
@@ -93,7 +93,7 @@ The symbol □, the _tombstone_, tells you where the proof ends.
 In older texts, you often see the initialism Q.E.D. instead, which stands for _quod erat demonstrandum_, or "which was to be demonstrated." 
 </aside>
 
-The structure of this proof is hopefully simple enough to be obvious. In the first line we pick two specific numbers $\rc{a}$ and $\bc{b}$, but we only assume that they are even. Any other properties they may have, we ignore. Therefore, whatever we conclude about them (in this case that their sum is even) muist hold for all pairs of even numbers.
+The structure of this proof is hopefully simple enough to be obvious. In the first line we pick two specific numbers $\rc{a}$ and $\bc{b}$, but we only assume that they are even. Any other properties they may have, we ignore. Therefore, whatever we conclude about them (in this case that their sum is even) must hold for all pairs of even numbers.
 
 <aside>One ever-present danger is that you make an additional assumption somewhere in your proof without noticing that you've done so. This is probably the most common way in which seemingly correct proofs turn out to be flawed. 
 </aside>
