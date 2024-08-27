@@ -62,13 +62,13 @@ Limits are a way to make this kind of reasoning precise, and to help you figure 
 
 ### On infinities
 
-In limits, you will often see the infinities $\infty$ and $-\infty$ used in the same way that numbers are used. As you may know, we don't usually consider these as part of the set of numbers. When we uses them in the context of limits, they are just a convenient shorthand for saying that either we want to make a particular variable bigger and bigger, or for saying that the limit of a function doesn't converge to a finite values (i.e. the output gets bigger and bigger).
+In limits, you will often see the infinities $\infty$ and $-\infty$ used in the same way that numbers are used. As you may know, we don't usually consider these as part of the set of numbers. When we use them in the context of limits, they are just a convenient shorthand for saying that either we want to make a particular variable bigger and bigger, or for saying that the limit of a function doesn't converge to a finite values (i.e. the output gets bigger and bigger).
 
 To be precise, the result of a limit can be either a number _or_ positive or negative infinity. The same holds for the target $t$ in the definition of the limit. In most settings, this is only allowed for these two parts of the limit: the variable $\bc{x}$ itself, and any other parts of the function are only allowed to be numbers.
 
 The reason to keep this separation clear is that we don't normally want to treat infinity as a real concept, in the same way we treat numbers. You might hear people say something like "adding infinity to 3 results in infinity", but this kind of reasoning quickly breaks down. It's better to take this as a shorthand for the more precise "adding a very large number to 3 results in another very large number, and as the first number gets larger, the distinction between the two disappears".
 
-In short, infinity is not a point on the number line, _it's a direction_. 
+In short, **infinity is not a point on the number line, _it's a direction_**. 
 
 There are no infinitely large or infinitely small quantities, but we can set up a series of values that grow arbitrarily large or arbitrarily small. This is the distinction that the language of limits allows us to capture.
 

@@ -28,7 +28,7 @@ The answer is that it doesn't matter, of course, because
 
 $$(4 + 5) \cdot \gc{2} = 4 \cdot \gc{2}\,+\, 5 \cdot \gc{2} \p $$
 
-We say that the multiplication by $\gc{2}$ _distributes_ over the summation of 4 and 5. For three numbers $a$, $b$ and $\gc{x}$ he know that  
+We say that the multiplication by $\gc{2}$ _distributes_ over the summation of 4 and 5. For three numbers $a$, $b$ and $\gc{x}$ we know that  
 
 $$(a + b)\gc{x} = a\gc{x}\, +\, b\gc{x} \p $$
 

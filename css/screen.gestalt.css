@@ -2,6 +2,15 @@
  * #677d00 green
  * #acd373 light green
  * #00327d blue
+ *
+     	["my-red"] = '#b13e26';
+     	["my-light-red"] = '#d38473';
+       	["my-light-blue"] = '#73a7d3';
+       	["my-gray"] = '#999';
+       	["my-orange"] = '#e69500';
+       	["my-light-orange"] = '#ffC353';
+
+ *
  */
  
 html, body {
@@ -959,4 +968,87 @@ ul#markdown-toc ul {
 }
 ul#markdown-toc  li li {
 	margin-left: 1em;
+}
+
+/**
+ * Syntax highlighting
+ */
+
+code .k, code .ow {
+    font-weight: bold;
+    color: #00327d;
+}
+
+code .c1, code .c2{
+    font-style: italic;
+    color: #999;
+}
+
+.algorithm .pseudocode .sb {
+     color: #677d00;
+     font-weight: bold;
+}
+
+/**
+ * Algorithm tabs
+ */
+
+.hidden {
+    display: none;
+}
+
+.algorithm {
+    margin-bottom: 1em;
+}
+
+#body .algorithm h3 {
+    font-size: 0.81em;
+    color: #aaa;
+    margin-bottom: 0.3em;
+}
+
+.algorithm section.inactive {
+    display: none;
+}
+
+.algorithm button {
+    background: none;
+    border: solid 1px transparent;
+    padding: 0.1em 0.5em 0.4em 0.5em;
+    cursor: pointer;
+    font-weight: 500;
+
+    color: black;
+
+    font-family: 'Georgia', serif;
+	font-size: 17px;
+	line-height: 27px;
+
+    margin-bottom: -1px;
+}
+
+.algorithm .tabs {
+    border-bottom: solid #ccc 1px;
+    padding-left: 0.5em;
+}
+
+.algorithm button.inactive {
+
+    background: transparent;
+
+}
+
+.algorithm button.active {
+    border: solid 1px #ccc;
+    border-bottom: solid 1px #eee;
+
+    background: #eee;
+
+}
+
+.algorithm section {
+    padding: 1em;
+    background: #eee;
+
+    font-size: 0.81em;
 }

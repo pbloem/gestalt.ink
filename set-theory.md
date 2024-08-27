@@ -127,7 +127,7 @@ We define this as follows: if the set $n$ represents a number, then its successo
 <p>To start with, the only number we know about is $0 = \oc{\{\}}$. Its successor is the set <em>containing</em> $\oc{\{\}}$. We can give this successor the name $\gc{1}  = \gc{\{\oc{0}\}}$. The successor of $\gc{1}$ is the set containing $\gc{1}$ and all elements in $\gc{1}$. Naming this successor $\bc{2}$, we get $\bc{2} = \bc{\{\gc{1}, \oc{0}\}} = \bc{\{\gc{\{\oc{\{\}}\}}, \oc{\{\}}\}}$.
 </p> 
 
-Try to complete the process for a few more numbers. You'll see that each number is defined as the set of all natural numbers that proceed it. 
+Try to complete the process for a few more numbers. You'll see that each number is defined as the set of all natural numbers that precede it. 
 
 This solves a particular problem with defining set theory before numbers: defining cardinality. Above, we defined cardinality informally as the _number_ of things in the set. We can't do that if numbers haven't been defined yet. Instead we can use the idea of a **one-to-one correspondence**. 
 
@@ -211,7 +211,7 @@ $$
 $$
 <p>represents the odd numbers $\{0, 1, 3, 5, \ldots\}$</p>
 
-If it is not clear from context what the universe is we can define it more precisely as the **relative complement** between two sets, also known as the **set difference**. The set difference between $\bc{x}$ and $\rc{y}$, written as 
+If it is not clear from context what the universe is, we can define it more precisely as the **relative complement** between two sets, also known as the **set difference**. The set difference between $\bc{x}$ and $\rc{y}$, written as 
 
 $$
 \bc{x} - \rc{y}

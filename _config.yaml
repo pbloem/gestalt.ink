@@ -1,6 +1,11 @@
 title:            gestalt.ink
 description:      Bottom-up explanations
 
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
 defaults:
   -
     scope:

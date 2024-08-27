@@ -123,7 +123,7 @@ front: true
 <section  markdown="1">
 ## Level 4
 
-<span>Topics that are usually no longer covered in organized educational formats, but rather in research articles or materials aimed at working scientists.</span>
+<span>Topics that are usually not covered in university courses, but rather in research articles or materials aimed at working scientists.</span>
 
 <div markdown="1">
 ### Information theory
