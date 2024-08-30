@@ -107,12 +107,12 @@ The main aim of proofs is to be _rigorous_. That is, to be so precise that nobod
 * **State explicitly what you are going to prove**.
 * **State explicitly everything you assume to be true.** For example in our case, we make the assumption that the sum of two natural numbers is a natural number. We could make our proof even more rigorous by stating this explicitly (either before or inside the proof), or even by proving it first.
 * **State explicitly how you define all your objects and their properties.** For example, we make it clear that $\rc{a}$ and $\bc{b}$ are even natural numbers. We also state explicitly what it means for a number to be even. This is a property that most people understand very intuitively, but by giving an explicit definition in the form of an equation $\gc{n} = 2\bc{m}$, we can use this equation in the proof.
-* **Go through your argument in small steps.** Work out everything you need to establish and how it might follow from what you already know to be true. For anything that sounds vague or unsubstantiated, think hard about how you can make it more precise. Often, this involves break large steps of reasoning into smaller steps, and working from the precise langauge of your definitions.
+* **Go through your argument in small steps.** Work out everything you need to establish and how it might follow from what you already know to be true. For anything that sounds vague or unsubstantiated, think hard about how you can make it more precise. Often, this involves breaking large steps of reasoning into smaller steps, and working from the precise langauge of your definitions.
 
 <aside>Some people see this as a black-and-white distinction. Something is either rigorous enough to be a proof, or it's not a proof at all. I think it's better to think of it as a spectrum: proofs can always be made more rigorous, and the level of rigour that is called for is determined by the context. More on this later.
 </aside>
 
-If you are asked to come up with a proof, this is usually a good place to start: write down everything you are allowed to assume, and try to write down as precisely as possible, what it is you are trying to prove. 
+If you are asked to come up with a proof, this is usually a good place to start: write down everything you are allowed to assume, and try to write down as precisely as possible what it is you are trying to prove. 
 
 ## Proofs and axioms
 
@@ -146,7 +146,7 @@ If you assume these two things are true, Thales showed, you can prove that the a
 Here is the proof.
 
 <div class="theorem"><strong>Thales's theorem</strong><br>
-Let $A$ and $B$ be the ends of a diameter drawn on a circle, and let $X$ be any other point on the circle. Then the triangle made by the points $A$, $B$ and $C$ has a right angle at $C$.
+Let $A$ and $B$ be the ends of a diameter drawn on a circle, and let $C$ be any other point on the circle. Then the triangle made by the points $A$, $B$ and $C$ has a right angle at $C$.
 </div>
 <div class="proof" markdown="1"><strong>Proof.</strong> Call the center of the circle $O$, and draw a line from $O$ to $\bc{C}$. The distances from <span class="gc">$O$ to $A$</span>, <span class="rc">$O$ to $B$</span> and <span class="bc">$O$ to $C$</span> are all equal, so we can note that the triangles made by $\gc{AOC}$ and $\rc{BOC}$ are both isosceles triangles.
 
@@ -203,7 +203,7 @@ Using this approach, Euclid wrote a set of 13 volumes called _Elements_, putting
 
 To Euclid, these axioms were properties of the world. Things that were so obviously true that no sane man should doubt them. These days, however, we tend to think of axioms more as _assumptions_. 
 
-If you make the _assumption_ that Euclid's five axioms are true, then the whole of Euclidean geometry must follow: from the pyhagorean theorem to the impossibility of squaring the circle. But you can also make different assumptions. It is, for instance, possible to change the fifth axiom to something else, and to build up a different, non-Euclidean, geometry. 
+If you make the _assumption_ that Euclid's five axioms are true, then the whole of Euclidean geometry must follow: from the Pythagorean theorem to the impossibility of squaring the circle. But you can also make different assumptions. It is, for instance, possible to change the fifth axiom to something else, and to build up a different, non-Euclidean, geometry. 
 
 <aside>For instance, the geometry that describes shapes on the surface of a sphere like the Earth.
 </aside>
@@ -360,7 +360,7 @@ In conclusion, $R$ is a tree, and it has exactly one fewer node than $T$. This m
 
 One common mistake people make in writing this kind of proof, is to do the induction over one specific tree. For instance, to make the assumption about the first $n$ levels of a specific tree. 
 
-The key to the power of this proof method is in _the inductive assumption_, that is the bit of the inductuve step that we assume. In the whole proof, we only ever need to prove that this holds for a single, often very simple case (the base case). For the rest we can make the inductive assumption as broad and general as possible. In our case, it says that the property we are interested doesn't just hold for some subgraph of some tree we're working with, it says that it holds for absolutely every single tree of a certain size. 
+The key to the power of this proof method is in _the inductive assumption_, that is the bit of the inductive step that we assume. In the whole proof, we only ever need to prove that this holds for a single, often very simple case (the base case). For the rest we can make the inductive assumption as broad and general as possible. In our case, it says that the property we are interested doesn't just hold for some subgraph of some tree we're working with, it says that it holds for absolutely every single tree of a certain size. 
 
 <aside>Of course, it's no free lunch: the implication for $\gc{n}+1$, which we do have to prove, has to have the exact same structure as the assumption we make for $\gc{n}$, so the broader we make the assumption, the broader the implication becomes.
 </aside>
@@ -395,7 +395,7 @@ Since $\rc{h_1}$ is in the second set and $\bc{h_2}$ is in the first, $\rc{h_1}$
 
 But, for the case $\gc{n}=2$, the two remainders are disjoint and the inductive step fails.
 
-I suppose there are a few takeaways here. First is that proof by induction can be a slippery business. It's easy to make implicit assumptions. More specifically, here the lesson is that when you think about the inductive step, you shouldn't just focus on the high er steps of the ladder. Make sure the first few steps after the base case work. They're the most crucial.
+I suppose there are a few takeaways here. First is that proof by induction can be a slippery business. It's easy to make implicit assumptions. More specifically, here the lesson is that when you think about the inductive step, you shouldn't just focus on the higher steps of the ladder. Make sure the first few steps after the base case work. They're the most crucial.
 
 Finally, note the importance of _checking your own proof_. Just because you've reached the end, and all the individual steps seem fine, doesn't mean there aren't mistakes left to find. One way, is to go from the generic to the specific. Pick some concrete examples and walk through your proof. See what each of your assertions mean for this specific example.
 
@@ -465,7 +465,7 @@ Here's the theorem.
 
 If this is true, then for any natural number $\gc{n}$ we pick, we get an even number and if it is false, we should be able to find some number for which $\gc{n}^2 - \gc{n}$ is an odd number.
 
-So, how do we prove this? In high school maths, students (possibly driven but not caring too much about maths and rigour), may just try the formula for a few examples, say:
+So, how do we prove this? In high school, students (possibly driven by not caring too much about maths and rigour), may just try the formula for a few examples, say:
 
 * $0 \times 0 - 0 = 0$,
 * $1 \times 1 - 1 = 0$,
@@ -501,7 +501,7 @@ with $\gc{n}$ and $\bc{m}$ natural numbers. In the hope of sparking some ideas, 
 \bc{m} &= \frac{\gc{n}^2 - \gc{n}}{2} = \frac{\gc{n}^2}{2} - \frac{\gc{n}}{2} \p\\
 \end{align*}$$</p>
 
-Let's look at that last line. A term like $\gc{n}/2$ is interesting. If $\gc{n}$ is an odd number, then this is not a natural number, but something ending in $\rc{.5}$. In order for $\bc{m}$ to still be a natural number, the term $\gc{n}^2/2$ should _also_ have $\rc{.5}$ after the decimal. This happens if $\gc{n}^2$ is odd too. If we try a few examples of odd numbers this seems to check: $3^2 = 9, 5^2= 25, 7^2=49$. It may be that the square of an odd number is always odd.
+Let's look at that last line. A term like $\gc{n}/2$ is interesting. If $\gc{n}$ is an odd number, then this is not a natural number, but something ending in $\rc{.5}$. In order for $\bc{m}$ to still be a natural number, the term $\gc{n}^2/2$ should _also_ have $\rc{.5}$ after the decimal. This happens if $\gc{n}^2$ is odd too. If we try a few examples of odd numbers this seems to check out: $3^2 = 9, 5^2= 25, 7^2=49$. It may be that the square of an odd number is always odd.
 
 If $\gc{n}$ is even, then the term $\gc{n}/2$ is a natural number. This means that the term $\gc{n}^2$ should also be a natural number if $\bc{m}$ is going to be a natural number. Again, we can check for a few even numbers that the square seems to commonly be even $2^2 = 4, 6^2 = 36, 8^2 = 64$. 
 
@@ -527,13 +527,13 @@ If $\gc{n}$ is even, then we can write $\gc{n} = 2\rc{k}$ for some natural numbe
 
 We know that $\rc{k}$ is a natural number, so $\rc{k}^2$ must be one too. That means that if we take $\bc{m} = 2 \rc{k}^2$, we get $\gc{n}^2 = 2\bc{m}$ with $\bc{m}$ a natural number.
 
-This tells us that $\gc{n}$ being even means $\gc{n}^2$ is even. What about the other part of the lemma? We can first try the same appraoch. If $n$ is odd then we _can't_ write $\gc{n} = 2\rc{k}$ for some natural number $\rc{k}$. This kind of statement is a little more complex to build on. 
+This tells us that $\gc{n}$ being even means $\gc{n}^2$ is even. What about the other part of the lemma? We can first try the same approach. If $n$ is odd then we _can't_ write $\gc{n} = 2\rc{k}$ for some natural number $\rc{k}$. This kind of statement is a little more complex to build on. 
 
 A simpler approach is to take the previous proof and reverse the direction: we try to prove that if $\gc{n}^2$ is even, then $\gc{n}$ must be even too. This means that $\gc{n}^2$ is even if _and only if_ $\gc{n}$ is even. The result is that we can conclude that $\gc{n}^2$ must be odd if $\gc{n}$ is odd.
 
 So, we assume that $\gc{n}^2$ is even. This means it can be written as $2\bc{m}$ for a natural number $\bc{m}$: $\gc{n}^2 = 2\bc{m}$. From this, we want to get to the result that $\gc{n} = 2\rc{k}$. 
 
-I can't find a simpple way to do this algebraically, so let's get back to our previous strategy: computing specific examples. In the case of, say $4 \times 4 = 16$. How does the fact that $16$ is even imply that $4$ is even? What is it about the mechanics of the calculation that makes this happen?
+I can't find a simple way to do this algebraically, so let's get back to our previous strategy: computing specific examples. In the case of, say $4 \times 4 = 16$. How does the fact that $16$ is even imply that $4$ is even? What is it about the mechanics of the calculation that makes this happen?
 
 We can see this more clearly if we break the multiplication up into a repeated addition:
 
@@ -671,21 +671,21 @@ What you can leave out is a social convention. People like to think of proofs, a
 
 This doesn't just require trust, it requires understanding. Just like with any piece of writing, you need to have a clear idea of who your reader is, what their skills are, and what background knowledge they'll possess. 
 
-<aside>This is why things are so difficult as a student. Your reader is a teacher. They will give you no benefit of the doubt, because you haven't proved yourself yet. You are expected to write the whole proof in all its glorious detail. Moreover, it's very difficult to understand the mind of your teacher, because of the imbalance of experience. Perhaps they will find certain part of your proof trivial and certain parts key. But how would you know? If you want to play it safe, you'd better write the whole thing out in full. The only thing I wish people has told me when I was a student, is that this means your proofs will look nothing like the ones in the textbook. 
+<aside>This is why things are so difficult as a student. Your reader is a teacher. They will give you no benefit of the doubt, because you haven't proved yourself yet. You are expected to write the whole proof in all its glorious detail. Moreover, it's very difficult to understand the mind of your teacher, because of the imbalance of experience. Perhaps they will find certain part of your proof trivial and certain parts key. But how would you know? If you want to play it safe, you'd better write the whole thing out in full. The only thing I wish people had told me when I was a student, is that this means your proofs will look nothing like the ones in the textbook. 
 </aside>
 
 You may ask what lies at the extreme end of the spectrum. Can any proof be made indefinitely more precise. Can every step be divided up into further substeps? I think a good benchmark for the most rigorous proof, is the idea of a **formalized proof**. These are proofs that are written in such a strict and formalized language, one that looks a lot like a programming language, that a machine can, with no intelligence or intuition, through simple mechanical chaining of rules, verify that the conclusion follows follows from the chain of reasoning.
 
 Writing formalized proofs is not for the faint of heart. These proofs can grow very long, and many things are almost impossible to do in these systems. But if you want the ultimate verification that your proof is correct beyond a shadow of doubt, this as close as you'll get.
  
-However, the dividing line between something that gets you a passing grade and something that is apprently "not a proof" is not just about sufficient rigour. My teachers at university did not find my answers sufficiently rigorous, but they probably would refer to the image above as a "visual proof." Part of the answer is context, but part of it is also that the visual proof above shows that you have cracked the _central_ puzzle. It doesn't serve as a full and rigorous proof, but it does get to the heart of the problem. The nice thing about visual proofs is that they eliminate all the window dressing, the really allow you to see what the key insight behind the proof is. 
+However, the dividing line between something that gets you a passing grade and something that is apprently "not a proof" is not just about sufficient rigour. My teachers at university did not find my answers sufficiently rigorous, but they probably would refer to the image above as a "visual proof." Part of the answer is context, but part of it is also that the visual proof above shows that you have cracked the _central_ puzzle. It doesn't serve as a full and rigorous proof, but it does get to the heart of the problem. The nice thing about visual proofs is that they eliminate all the window dressing, they really allow you to see what the key insight behind the proof is. 
 
 It's a bit like a master painter setting out the broad strokes of a composition in 15 minutes, and leaving the details for their assistant to finish over the next days. The assistant did all the work, but the strokes that the master painted form the essence of the painting.
 
 <aside>That's what the master would say, at least.
 </aside>
 
-Clearly, that kind of distinction is very subtle, and far too subjective for the purposes of a homework exercise. When you are starting out writing proofs, I suggest you simply write the most completely and rigorous proof you can. Over time, you will start to see the wood for the trees, and you will begin to separate the main idea from the admin and the housekeeping. 
+Clearly, that kind of distinction is very subtle, and far too subjective for the purposes of a homework exercise. When you are starting out writing proofs, I suggest you simply write the most complete and rigorous proof you can. Over time, you will start to see the wood for the trees, and you will begin to separate the main idea from the admin and the housekeeping. 
 
 The more you practice, the more you will gravitate towards judiciously leaving things out. Partly to economize on space, partly to help readers focus on the main idea. You may even try flourishes like visual proofs. But such flourishes must be _earned_. You can do that when you have shown that you are not hiding anything in the parts of the proof you leave out. You should, in principle, always have the full rigorous proof worked out in your head, before you decide which parts to put on paper.
 
@@ -693,7 +693,7 @@ The more you practice, the more you will gravitate towards judiciously leaving t
 
 Much has been written on proofs, and how to write them. Here are some books I recommend, if you really want to dig in. They provide more detail on different proofs than I have given here, and many of them provide some exercises as well.
 
-**[Proof and the art of mathematics](https://jdh.hamkins.org/proof-and-the-art-of-mathematics/)** Joel David Hamkins. This is a very readable beginner's guid to proof. Like in this article, most of the proofs are in intuitive areas like basic properties of natural numbers, or geometries. Hamkins doesn't just set out the basic principles, he also goes into detail, showing different ways to prove the same thing and general, and provides general good habits that you should try to develop as you write your own proofs. 
+**[Proof and the art of mathematics](https://jdh.hamkins.org/proof-and-the-art-of-mathematics/)** Joel David Hamkins. This is a very readable beginner's guide to proof. Like in this article, most of the proofs are in intuitive areas like basic properties of natural numbers, or geometries. Hamkins doesn't just set out the basic principles, he also goes into detail, showing different ways to prove the same thing, and provides general good habits that you should try to develop as you write your own proofs. 
 
 **[How to solve it](https://en.wikipedia.org/wiki/How_to_Solve_It)**, George Pólya. Presented as a basic problem solving manual, but many of the problems are mathematical in nature.
 
