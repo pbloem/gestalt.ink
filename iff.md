@@ -3,6 +3,8 @@ Title: If and only if
 summary: "The phrase if and only if, often abbreviated as iff, is common in the language of  mathematics."
 ---
 
+# If and only if 
+
 The phrase **if and only if**, often abbreviated as **iff**, is common in the language of  mathematics. 
 
 Normally, when we say something like "$\bc{B}$ if $\rc{A}$" or "if we know that $\rc{A}$ is true then $\bc{B}$ is also true", we are only allowed to make a deduction in one direction. For instance, if somebody tells us the following:

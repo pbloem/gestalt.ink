@@ -146,7 +146,8 @@ article {
 	#body blockquote,
 	#body div.sample,
 	#body .theorem,
-	#body .proof
+	#body .proof,
+	#body ul#markdown-toc
 	{
 		margin: 0 auto 1em auto;
 		width: 660px;
@@ -482,6 +483,11 @@ figure img.right {
 	min-width: 150px;
 }
 
+#body figure .full {
+	width: 100%;
+	min-width: 150px;
+}
+
 #body dl {
 	padding: 0;
 }
@@ -786,6 +792,13 @@ div.sample
 	padding: 0 1em;
 	
 	border-left: solid 4px #bbb;
+
+}
+
+.proof::after { /* Clear the QED symbol. */
+  content: "";
+  display: block;
+  clear: both;
 }
 
 #body div.proof strong.title,

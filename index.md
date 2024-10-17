@@ -24,6 +24,13 @@ front: true
 </div>
 
 <div markdown="1">
+### Terminology
+
+* [wlog](wlog)
+* [iff](iff)
+</div>
+
+<div markdown="1">
 ### Calculus
 
 * [Limits](/limits)
@@ -83,7 +90,7 @@ front: true
 
 <div markdown="1">
 ### General
-
+* [Understanding Gaussians](/gaussians)
 * Axiomatic set theory
 * Numbers revisited
 </div>
