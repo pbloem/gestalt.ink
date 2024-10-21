@@ -57,6 +57,7 @@
 			mtextFontInherit: true
 		}, 
 		TeX: {
+	   		tags: 'ams',
 			extensions: ["color.js"],
 			Macros: {
 				lgc: ["{\\color{my-light-green} #1}", 1],
@@ -115,6 +116,8 @@
 				p: ["\\,\\text{.}"],
 
 				Sig: ["\\mathbf \\Sigma"],
+				sig: ["\\mathbf \\sigma"],
+
 				bTau: ["\\mathbf T"],
 				boldeta: ["\\mathbf \\eta"],
 				bnu: ["\\mathbf \\nu"],
@@ -154,8 +157,6 @@
        	MathJax.Extension["TeX/color"].colors["my-gray"] = '#999';
        	MathJax.Extension["TeX/color"].colors["my-orange"] = '#E69500';
        	MathJax.Extension["TeX/color"].colors["my-light-orange"] = '#FFC353';
-
-
 	});
 	</script>
 	

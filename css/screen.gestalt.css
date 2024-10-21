@@ -12,7 +12,39 @@
 
  *
  */
- 
+
+@font-face {
+    font-family: charter;
+    font-style: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    src: url('/css/Charter/charter_regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: charter;
+    font-style: italic;
+    font-weight: normal;
+    font-stretch: normal;
+    src: url('/css/Charter/charter_italic.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: charter;
+    font-style: normal;
+    font-weight: bold;
+    font-stretch: normal;
+    src: url('/css/Charter/charter_bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: charter;
+    font-style: italic;
+    font-weight: bold;
+    font-stretch: normal;
+    src: url('/css/Charter/charter_bold_italic.woff2') format('woff2');
+}
+
 html, body {
 	margin: 0;
 	
@@ -21,7 +53,7 @@ html, body {
 	font-size: 5vw;
 	line-height: 7vw;
 	
-	font-family: Georgia, sans-serif;
+	font-family: charter, Georgia, serif;
 }
 
 html {
@@ -136,7 +168,6 @@ article {
 	#body p, 
 	#body pre, 
 	#body header,
-	#body aside,
 	#body ul,
 	#body ol,
 	#body dl,
@@ -155,6 +186,15 @@ article {
 	
 	.home img.photo {
 		width: 15%;
+	}
+
+	#body aside {
+		margin: 0 auto 1em auto;
+		width: calc(660px - 2em);
+	}
+
+	#body aside p {
+	    width: auto
 	}
 	
 	p {
@@ -216,6 +256,13 @@ h1 {
 	 
 	margin: 1em auto 1em auto;
 	
+}
+
+#body h4 {
+
+    font-size: 1em;
+
+    font-style: italic;
 }
 
 #body h5 {
@@ -281,6 +328,10 @@ a:hover {
 
 #body .MathJax a {
 	padding-bottom: 0.4em;
+}
+
+#body .MathJax_Display > span {
+    padding: 0 2em 0 2em;
 }
 
 abbr {
@@ -374,8 +425,6 @@ ul.links {
 	line-height: 1.875em;
 	
 	margin-bottom: 1em;
-	
-	width: calc(660px - 2em);
 }
 
 aside em {

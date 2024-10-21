@@ -12,7 +12,7 @@ When we think of a probability distribution like a normal distribution, usually 
 </figcaption>
 </figure>
 
-This is the distribution on the height of female soldiers in the US army [[1](#references)]. The picture seems relatively straightforward. We have a mean, which is the most likely value and the likelihood of various values decays quickly as we move away from the mean, to the point that a height of 135cm or 295 cm is pretty unlikely.
+This is the distribution on the height of female soldiers in the US army [[1](#references)]. The picture seems relatively straightforward. We have <span class="bc">a mean</span>, which is the most likely value and the likelihood of various values decays quickly as we move away from the mean, to the point that a height of 135cm or 195 cm is pretty unlikely.
 
 Now, if I were to ask you which of the two highlighted points had the higher probability, <span class="bc">the one at the peak of the distribution</span> or <span class="rc">the one just to the left of it</span>? What would you answer?
 
@@ -43,9 +43,9 @@ For example, the interval of size 4 around <span class="bc">the blue point</span
 
 ## Intuition
 
-Does that seem counter-intuitive? How can a point have zero probability of being sampled, when some point ultimately does get sampled? One way to wrap your head around this, is to imagine a uniform distribution on $n$ points equally space between $0$ and $1$. For $n=4$ each point has probability $1/4$ of being sampled. As we increae $n$, the probability $1/n$ goes to zero. We can make the probability as close to zero as we like. After we sample, one point must have been chosen, even though the probability of that happening was astronomically small.
+Does that seem counter-intuitive? How can a point have zero probability of being sampled, when some point ultimately does get sampled? One way to wrap your head around this, is to imagine a uniform distribution on $n$ points equally space between $0$ and $1$. For $n=4$ each point has probability $1/4$ of being sampled. As we increase $n$, the probability $1/n$ goes to zero. We can make the probability as close to zero as we like. After we sample, one point must have been chosen, even though the probability of that happening was astronomically small.
 
-<aside>It's the same with the lottery, or being struck by lightning 7 times. It's so unlikely that you might as well think of it as impossible for all practical purposes. However, it will happen to one person (and they will be fogiven for never believing in the principles of probability ever again).</aside>
+<aside>It's the same with the lottery, or being struck by lightning 7 times. It's so unlikely that you might as well think of it as impossible for all practical purposes. However, it will happen to one person (and they will be forgiven for never believing in the principles of probability ever again).</aside>
 
 Probability density functions are the natural limit of this process, where the probability of each individual outcome becomes zero, and we can only use density to describe the relative likelihood of outcomes. Perhaps your intuition is right, and perhaps it's silly to think of an outcome with probability 0 actually existing. Just like a number with infinitely many decimal places can't actually "exist" in our universe. 
 
