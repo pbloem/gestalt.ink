@@ -192,7 +192,7 @@ We sample an $n$-dimensional vector $\s$ from $N_s$ and apply any linear operati
 
 Now, we _define_ a Gaussian to be any distribution that results from this process, for some choice of $\bc{\A}$ and $\oc{\t}$. We will, refer to such a Gaussian as $N(\bc{\A}, \oc{\t})$.
 
-<aside>Note that $\s$ is an $n$-dimensional vector and $\x$ is a $m$-dimensional vector. $\s$ and $\x$ often have the same dimension, butit's not necessary.  
+<aside>Note that $\s$ is an $n$-dimensional vector and $\x$ is a $m$-dimensional vector. $\s$ and $\x$ often have the same dimension, but it's not necessary.  
 </aside>
 
 We have defined how to sample a point from $N(\bc{\A}, \oc{\t})$, so we have fully defined this Gaussian. Obviously, it would be interesting to know what the resulting density function looks like, but that doesn't need to be _its definition_. We can work that out from how we defined the sampling process. We'll try to do that, and to work out some properties of the distribution we have now defined, without getting into the complicated formula for the density function. 
