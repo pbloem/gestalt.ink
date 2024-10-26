@@ -5,7 +5,7 @@ No matter what I study, I can see patterns. I see the gestalt, the melody within
 &mdash;Ted Chiang, Understand
 </blockquote>
 
-Gestalt.ink is a collection of explainers and general knowledge articles written by me, [Peter Bloem](peterbloem.nl).
+Gestalt.ink is a collection of explainers and general knowledge articles written by me, [Peter Bloem](http://peterbloem.nl).
 
 It is intended as a slowly growing and highly incomplete repository of general knowledge, focusing on mathematics, machine learning and physics. Its first aim is to provide an overview which is more or less encyclopedic in style and which allows the reader to jump in at arbitrary points. Each topic is discussed using minimal preliminaries, and with the required preliminaries spelled out explicitly.
 
