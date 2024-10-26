@@ -21,18 +21,21 @@ To start at the beginning: the normal distribution is a _probability distributio
 <aside markdown="1">Why _female_ soldiers only? If we were to mix male and female soldiers, we would get a distribution with two peaks, which would not be Gaussian.  
 </aside>
 
-You can see that the data is clustered around the _<span class="oc">mean value</span>_. Another way of saying this is that the distribution has a definite _scale_. That is, even though people can have all sorts of heights, there are clear limits. You might see somebody who is 1 meter taller than the mean, and it might theoretically be possible to be 2 meters taller than the mean, but that's it. People will never be 3 or 4 meters taller than the mean, no matter how many people you see.
+You can see that the data is clustered around the _<span class="oc">mean value</span>_. Another way of saying this is that the distribution has a definite _scale_. That is, even though people can have all sorts of heights, there are clear limits. You might see somebody who is 1 meter taller than the mean, and it might theoretically be possible to be 2 meters taller than the mean, but that's it. People will never be 3 or 4 meters taller than the mean, no matter how many people you see. The distribution still assigns this event some probability density, since we can never be sure, but it's astronomically small.  
 
 <aside markdown="1">As an example of a distribution _without_ a definite scale, consider wealth. In the town or city where you live, there are probably many people with ten times the typical level of wealth, and a few with a hundred times. In the whole world there will be people with a thousand to a million times the typical wealth. If we could sample more people than that we could keep going.
 </aside>
 
-The definite scale of the height distribution is why we can have doors. We know that heights will fall in a certain range, so we can build for that. There are a few distributions like this with a definite scale, but the Gaussian is the most famous one. You can see in the plot above that it has a kind of "bell" shape---it's also called _the bell curve_---which trails off smoothly as we get further from the mean, first slowly and then dropping rapidly, and then flattening out quickly. If we make the bins in our histogram smaller, and increase the sample size so they are still filled up, we can see the shape appear more clearly. 
+The definite scale of the height distribution is why we can have doors. We know that heights will fall in a certain range, so we can build for that. There are a few distributions like this with a definite scale, but the Gaussian is the most famous one. You can see in the plot above that it has a kind of "bell" shape---it's also called _the bell curve_---which trails off smoothly as we get further from the mean, first slowly and then dropping rapidly, and then flattening out quickly. If we make the bins in our histogram smaller, and increase the sample size so they are still filled up, we can see the shape appear more clearly.
 
 <figure class="centering" markdown="1">
 <img src="/images/gaussians/soldiers-synth.svg" class="three-quarters">
 <figcaption markdown="1">Synthetic data for 100 million imagined soldiers from the same distribution as the figure above.
 </figcaption>
 </figure>
+
+<aside>Note that the normal distribution is a little bit of a mismatch for the people's heights, since this domain has a hard cutoff at 0. Negative heights are impossible rather than unlikely, but the normal distribution extends to infinity in both directions. It is quite common in such situations to use a Gaussian anyway, especially if the cutoff in your data coincides with a region where the probability is vanishingly small. 
+</aside>
 
 If you measure more than one thing about your subject, you get _multivariate_ data, and the resulting distribution is called a _multivariate distribution_. For example, if we take our soldiers, and measure their height and their weight, the data looks like this.
 
@@ -55,6 +58,10 @@ In this article, we want to focus more on the way Gaussians are used in _machine
 </figure>
 
 To use Gaussians in this way requires a solid intuition for how they behave. The best way to do that, I think, is to do away entirely with the symbolic and mathematical foundations, and to derive what Gaussians are, and all their fundamental properties from purely geometric and visual principles. That's what we'll do in this article.
+
+<aside markdown="1">That doesn't mean we don't go into some hairy symbolic maths. However, the basic principle of what we're doing is hopefully simpler to understand and visualize than it is when we start with the big scary formula. 
+</aside>
+
 
 ## Building a geometric intuition for Gaussians
 
@@ -103,7 +110,7 @@ $$
 x = -\sqrt{\frac{1}{2}}  \;\text{and}\; x = \sqrt{\frac{1}{2}} \p
 $$
 
-If we want to stretch a function $f(x)$ vertically by a factor of $\rc{y}$, we should multiply its input by $\rc{1/y}$: $f\left(\rc{\frac{1}{y}}x\right)$. That means that if we want to stretch it so that the point $\rc{x}$ ends up at 1---a stretch of $\rc{1/x}$---we should multiply the input by $\rc{x}$
+If we want to stretch a function $f(x)$ horizontally by a factor of $\rc{y}$, we should multiply its input by $\rc{1/y}$: $f\left(\rc{\frac{1}{y}}x\right)$. That means that if we want to stretch it so that the point $\rc{x}$ ends up at 1---a stretch of $\rc{1/x}$---we should multiply the input by $\rc{x}$
 
 In our case, that means we multiply the input by $\rc{\sqrt{\frac{1}{2}}}$: 
 
@@ -925,6 +932,10 @@ You may ask what happens if $\bc{\A}$ is not invertible. Well, then $\bc{\Sig}$ 
 ## Sources and other materials
 
 * We discuss these same topics in our [lecture on Diffusion models](https://dlvu.github.io/diffusion/) in the [deep learning course at the Vrije Universiteit Amsterdam](https://dlvu.github.io/). This lecture is a little more compact than this article, which may help you to get the general overview. It comes with videos (or will do soon).
+
+## Acknowledgements
+
+Many thanks to the commenters on [Hacker News](https://news.ycombinator.com/item?id=41912160) for pointing out mistakes, and other places where the article could be improved.  
 
 ## References
 
