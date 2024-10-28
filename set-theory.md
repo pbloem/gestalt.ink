@@ -193,7 +193,7 @@ An **intersection** is a kind of counterpart to a union. It also builds a new se
 It is written with the $\cap$ symbol. For example 
 
 <p>$$\begin{align*}
-\{\oc{0}, \gc{1}, \bc{2}\} \cap \{\bc{2}, 3, 4\} &= \{\oc{0}, \gc{1}, \bc{2}, 3, 4\} \\
+\{\oc{0}, \gc{1}, \bc{2}\} \cap \{\bc{2}, 3, 4\} &= \{\bc{2}\} \\
 \{\oc{0}, \gc{1}\} \cap \{\} &= \{\} \\
 \{\oc{0}, \gc{1}, \bc{2}, \ldots\} \cap \{16, 17, 18\} &= \{16, 17, 18\} \p
 \end{align*}$$</p>
