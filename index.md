@@ -79,6 +79,12 @@ front: true
 * Abstract linear algebra
 </div>
 
+<div markdown="1">
+### Machine learning
+
+* [Overfitting](overfitting)
+</div>
+
 
 </section>
 
