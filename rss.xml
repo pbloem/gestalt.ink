@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+ <title>gestalt.ink</title>
+ <description>Gestalt.ink—feed highlights recently added articles and articles that received major updates.</description>
+ <link>http://gestalt.ink</link>
+ <ttl>1800</ttl>
+
+	<item>
+		<title>Overfitting</title>
+		<link>https://gestalt.ink/overfitting</link>
+		<pubDate>10 Nov 2024 00:00:00 GMT</pubDate>
+	</item>
+
+	<item>
+		<title>Understanding Gaussians</title>
+		<link>https://gestalt.ink/gaussians</link>
+		<pubDate>21 Oct 2024 00:00:00 GMT</pubDate>
+	</item>
+
+	<item>
+		<title>Probability and probability density</title>
+		<link>https://gestalt.ink/probability-and-probability-density</link>
+		<pubDate>17 Oct 2024 00:00:00 GMT</pubDate>
+	</item>
+
+	<item>
+		<title>Complex numbers</title>
+		<link>https://gestalt.ink/complex-numbers</link>
+		<pubDate>28 May 2023 00:00:00 GMT</pubDate>
+	</item>
+
+	<item>
+		<title>Set theory</title>
+		<link>https://gestalt.ink/set-theory</link>
+		<pubDate>30 Apr 2023 00:00:00 GMT</pubDate>
+	</item>
+
+	<item>
+		<title>The binomial theorem</title>
+		<link>https://gestalt.ink/binomial-theorem</link>
+		<pubDate>29 Apr 2023 00:00:00 GMT</pubDate>
+	</item>
+
+
+</channel>
+</rss>
