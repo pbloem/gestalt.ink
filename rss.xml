@@ -7,6 +7,12 @@
  <ttl>1800</ttl>
 
 	<item>
+		<title>Residual connections</title>
+		<link>https://gestalt.ink/residual-connection</link>
+		<pubDate>11 Nov 2024 00:00:00 GMT</pubDate>
+	</item>
+
+	<item>
 		<title>Overfitting</title>
 		<link>https://gestalt.ink/overfitting</link>
 		<pubDate>10 Nov 2024 00:00:00 GMT</pubDate>
