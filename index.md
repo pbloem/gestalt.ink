@@ -83,6 +83,7 @@ front: true
 ### Machine learning
 
 * [Overfitting](overfitting)
+* [Residual connections](residual-connection) 
 </div>
 
 
