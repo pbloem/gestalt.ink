@@ -68,7 +68,7 @@ In practice, however, this isn't necessary and the simpler version `y ← block(
 
 ## An experiment
 
-We can validate the explanation above by training a model with a residual connection and tracking the gradient norm at two points: the pert going into the block, which we'll call $\x_\text{in}$ and the residual connection, which we'll call $\x_\text{res}$.
+We can validate the explanation above by training a model with a residual connection and tracking the gradient norm at two points: the part going into the block, which we'll call $\x_\text{in}$ and the residual connection, which we'll call $\x_\text{res}$.
 
 We set up a simple network to classify MNIST. It consists of a block of three ReLU-activated convolutions, followed by a $4 \times 4$ maxpool, followed by another block of two convolutions, followed by another maxpool and a classification layer. Around the second block of convolutions, we place a residual layer.
 
