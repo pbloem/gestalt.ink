@@ -8,6 +8,9 @@ summary: ""
 Preliminaries:
 * Set theory
 
+Status:
+* This is all wrong. Ignore it. 
+
 ## Summary
 
 **Category theory** is a mathematical language for talking about a certain kind of abstract object, called a _category_. It's a bit like set theory or group theory, in that the objects of study (sets, groups, category) are so abstract that it's hard to give a quick, intuitive idea of what it's about. However, their definition is simple, and once you properly internalize it, you see that the definition fits a lot of natural objects, especially mathematical ones.
