@@ -33,7 +33,7 @@ $$
 \p
 $$
 
-Square diagonal matrices are a useful concept for many reason. This is primarily because their behavior is simple to understand. For example
+Square diagonal matrices are a useful concept for many reasons. This is primarily because their behavior is simple to understand. For example
 
 * Multiplying a square diagonal matrix $\gc{\D}$ by a vector $\x$ is equivalent to multiplys each element $x_i$ of $\x$ by the scalar $\gc{D}_{ii}$
 * Geometrically, this corresponds to the operation of stretching along the $i$-th axis by a factor of $\gc{D}_{ii}$.
