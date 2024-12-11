@@ -15,7 +15,7 @@ $$
 \p
 $$
 
-The term "diagonal matrix" usually refers to a square matrix, but it can also be used to refer to a non-suqare matrix. The matrix will then have some columns or rows that consist of only zeros. For example:
+The term "diagonal matrix" usually refers to a square matrix, but it can also be used to refer to a non-square matrix. The matrix will then have some columns or rows that consist of only zeros. For example:
 
 $$
 \begin{pmatrix} 
