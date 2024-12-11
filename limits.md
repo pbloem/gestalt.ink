@@ -6,9 +6,11 @@ title: Limits
 
 ## Summary
 
-**Limits** are a mathematical way of talking about the way a function behaves as a particular variable gets closer and closer to a given target value. They are used in many areas of mathematics, for example in the definition of [derivatives](/derivatives).
+**Limits** are a mathematical way of talking about the way a function _behaves_. They are used in many areas of mathematics, for example in the definition of [derivatives](/derivatives).
 
-As an example, consider what happens to the function 
+Specifially limits describe how a function behaves when its input $x$ gets closer and closer to some given value $t$. This is often helpful when the function is not defined at $t$, but it is defined _near_ $t$. We can also set $t$ to $\intfy$ or $-\infty$ and use limits to describe how the function behaves as it grows towards infinity.
+
+To illustrate, consider what happens to the function 
 
 $$
 \frac{1}{\bc{x}-1}
