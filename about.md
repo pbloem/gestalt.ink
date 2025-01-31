@@ -37,7 +37,7 @@ In LaTeX documents you can switch to Euler with a simple `\usepackage{eulervm}`.
 
 The only thing to be aware of when using Euler is that it pairs terribly with the default LaTeX typeface. For this reason you should switch the default typeface as well. There are many options that work well, including Georgia and Palatino.
 
-In my articles and here on Gestalt, I use **[Charter](https://en.wikipedia.org/wiki/Bitstream_Charter)** a beutiful typeface by the great Matthew Carter, who is also responsible for Georgia and Verdana. It is available in LaTeX with `\usepackage{charter}` and on the web through [a simple set of free web fonts](https://practicaltypography.com/charter.html).
+In my articles and here on Gestalt, I use **[Charter](https://en.wikipedia.org/wiki/Bitstream_Charter)** a beautiful typeface by the great Matthew Carter, who is also responsible for Georgia and Verdana. It is available in LaTeX with `\usepackage{charter}` and on the web through [a simple set of free web fonts](https://practicaltypography.com/charter.html).
 
 **How do you make your figures and plots?**
 
