@@ -148,8 +148,8 @@ If we multiply them, we get
 
 $$\begin{align}
 (\gc{a} + \gc{b}i)(\oc{c} + \oc{d}i) &= \gc{a}\oc{c} + \gc{a}\oc{d}i + \gc{b}i\oc{c} + \gc{b}i\oc{d}i \\
-&= (\gc{a}\oc{d} + \gc{b}\oc{d}\kc{i^2}) + (\gc{a}\oc{d} + \gc{b}\oc{c})i \\
-&= \bc{ad - bd} + \rc{(ad + bc)}i \p
+&= (\gc{a}\oc{c} + \gc{b}\oc{d}\kc{i^2}) + (\gc{a}\oc{d} + \gc{b}\oc{c})i \\
+&= \bc{(ac - bd)} + \rc{(ad + bc)}i \p
 \end{align}$$
 
 That is, one <span class="bc">real-valued number</span>, added to $i$ times another <span class="rc">real-valued number</span>. Note that in the second line, we can use $i^2 = -1$, because we know that $i = \sqrt{-1}$. In short, multiplying or adding any two complex numbers together gives us another complex number. 
