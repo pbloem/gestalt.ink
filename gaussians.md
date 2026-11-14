@@ -141,7 +141,7 @@ $$ \text{ln } N_s(x) \eqplus -\frac{1}{2} x ^2 $$
 
 where the symbol $\eqplus$ means that both sides are equal except for some term ($- \text{ln}\,\bc{z}$ in this case) that doesn't depend on $x$.
 
-With that, we have defined our _standard Gaussian_ in one dimension as precisely as we need. We don't have the complete functional form of the density,but we don't need it. We know the function exists, and we know what it looks like. We can now derive the full family of Gaussians.
+With that, we have defined our _standard Gaussian_ in one dimension as precisely as we need. We don't have the complete functional form of the density, but we don't need it. We know the function exists, and we know what it looks like. We can now derive the full family of Gaussians.
 
 <aside>I hope you'll agree that we've reduced the Gaussian to a pretty straightforward function.</aside>
 
