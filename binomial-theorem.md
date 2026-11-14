@@ -231,11 +231,11 @@ $$
 \left (1 + \frac{1}{n}\right)^n \p
 $$
 
-Assuming that more compounding alway leads to more money (which it does), what's the most we could make? In other words, what's the limit of this expressing as n goes to infinity?
+Assuming that more compounding alway leads to more money (which it does), what's the most we could make? In other words, what's the limit of this expression as n goes to infinity?
 
 This is the definition of the number $e = 2.71828 \ldots$, **Euler's number**. This is one of those famous constants that crops up in many different settings. It was first discovered in the study of compounding interest.
 
-The relevance to the binomial theorem is that this expression fits the pattern $(\rc{a} + \bc{b})^n$ with $\rc{a} = 1$ and $\bc{b} = \cfrac{1}{n}$. That means we can use the binomial theorem with derive an alternative expression of $e$.
+The relevance to the binomial theorem is that this expression fits the pattern $(\rc{a} + \bc{b})^n$ with $\rc{a} = 1$ and $\bc{b} = \cfrac{1}{n}$. That means we can use the binomial theorem to derive an alternative expression of $e$.
 
 Let's start with the official definition.
 
